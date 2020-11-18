@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel SNG</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="banner">
+        <div class="background-overlay">
+          <div class="primary-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-12">
+                  <div class="first-navbar">
+                    <nav
+                      class="navbar navbar-expand-lg navbar-dark navbar-inverse"
+                    >
+                      <div class="navbar-logo">
+                        <img src="assets/images/hotel sng logo color.png" />
+                      </div>
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                      >
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                              >Home <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Rooms
+                            </a>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <a class="dropdown-item" href="rooms.html"
+                                >View All Rooms</a
+                              >
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="rooms.html"
+                                >Grand Deluxe</a
+                              >
+                              <a class="dropdown-item" href="rooms.html"
+                                >Superior Deluxe</a
+                              >
+                              <a class="dropdown-item" href="rooms.html"
+                                >Deluxe King Room</a
+                              >
+                            </div>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                              >Services
+                              <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                              >Gallery <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Pages
+                            </a>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <a class="dropdown-item" href="restaurant.html"
+                                >Restaurant and Bar</a
+                              >
+                              <a class="dropdown-item" href="#">Page 2</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Page 3</a>
+                            </div>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                              >Contact <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-md-5 col-12" style="margin: auto 0">
+                  <div class="second-navbar-wrapper">
+                    <div class="second-navbar">
+                      <div class="phone-no">
+                        <i class="fa fa-phone">&nbsp; Call:</i>
+                        <b>+977 9812345678</b>
+                        |
+                      </div>
+                      <div class="login">
+                        <div class="login-text">
+                          &nbsp; <i class="fa fa-user">&nbsp; Login &nbsp;</i>
+                        </div>
+                        <div class="book-now">
+                          <a href="#">BOOK NOW&nbsp;</a>
+                        </div>
+                        <div class="select-country">
+                          <select id="country" name="country">
+                            <option value="NP">NP</option>
+                            <option value="IN">IN</option>
+                            <option value="US">US</option>
+                            <option value="UK">UK</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-in-banner">
+            <p class="banner-subtitle">BEST HOTEL AND RESORT</p>
+            <p class="banner-title">HOTEL SNG</p>
+            <p class="banner-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              voluptatibus natus voluptas mollitia iusto ullam culpa consectetur
+              impedit itaque debitis
+            </p>
+            <button><a href="#">ROOMS SUITES</a></button>
+          </div>
+          <div class="search-wrapper" id="searchBar">
+            <form class="container" action="hotel.html">
+              <div class="bottom-search-bar d-none d-lg-flex">
+                <div class="item">
+                  <div class="item-sup" id="mobile-check-title">
+                    <div class="row">
+                      <div class="col-6">CHECK IN</div>
+                    </div>
+                  </div>
+                  <div class="mobile-checkdate">
+                    <input type="date" placeholder="Find a Hotel" />
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="item-sup" id="mobile-check-title">
+                    <div class="row">
+                      <div class="col-6">CHECK OUT</div>
+                    </div>
+                  </div>
+                  <div class="mobile-checkdate">
+                    <input type="date" placeholder="Find a Hotel" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="total-adults-section">
+                    <div>
+                      <div class="item-sup" id="mobile-check-title">
+                        <div class="row">
+                          <div class="col-12">ADULT</div>
+                        </div>
+                      </div>
+                      <div class="adult-numbers">
+                        <select id="adult" name="adult" size="1">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="total-children-section">
+                    <div class="item-sup" id="mobile-check-title">
+                      <div class="row">
+                        <div class="col-6">CHILDREN</div>
+                      </div>
+                    </div>
+                    <div class="children-numbers">
+                      <select id="children" name="children" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="total-rooms-section">
+                    <div>
+                      <div class="item-sup" id="mobile-check-title">
+                        <div class="row">
+                          <div class="col-6">ROOMS</div>
+                        </div>
+                      </div>
+                      <div class="room-numbers">
+                        <select id="rooms" name="rooms" size="1">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-container">
+                  <div class="search-button">
+                    <button>Search</button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bottom-search-bar-mobile d-flex d-lg-none"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                <span>Where to</span>
+                <span><i class="fa fa-ellipsis-v"></i></span>
+              </div>
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Where to</h5>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="bottom-search-bar">
+                        <div class="item">
+                          <span><i class="fa fa-search"></i></span>
+                          <input type="text" placeholder="Los Angeles" />
+                          <div class="item-sup">Destination</div>
+                        </div>
+                        <div class="item">
+                          <div class="mobile-checkdate">
+                            <span><i class="fa fa-calendar"></i></span>
+                            <input type="date" placeholder="Find a Hotel" />
+                            <input type="date" placeholder="Find a Hotel" />
+                          </div>
+
+                          <div class="item-sup" id="mobile-check-title">
+                            <div class="row">
+                              <div class="col-6">Check-in</div>
+                              <div class="col-6">Check-out</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <span><i class="fas fa-users"></i></span>
+                          <input type="text" placeholder="1 Room 1 Adult" />
+                          <div class="item-sup">Occupancy</div>
+                        </div>
+                        <div class="item">
+                          <span><i class="fas fa-dollar-sign"></i></span>
+                          <!-- <select>
+                          <option value="">Lowest Available Rate</option>
+                          <option value="">Promotional Code</option>
+                          <option value="">Senior Citizen Rate</option>
+                        </select> -->
+                          <input
+                            type="text"
+                            placeholder="Lowest Available Rate"
+                          />
+                          <div class="item-sup">Special rates</div>
+                        </div>
+                        <div class="button-container">
+                          <button>Search</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome">
+        <div class="container">
+          <p class="welcome-title">Welcome to Hotel SNG</p>
+          <p class="welcome-message">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum
+            aliquam facilis veniam, aperiam doloribus ut consectetur. Illo
+            tenetur nesciunt, laboriosam amet, molestias obcaecati, doloribus
+            sint facere eum quod dignissimos.
+          </p>
+          <img src="assets/images/signature-gm.png" />
+          <div class="general-manager">
+            <p class="manager-name">Sudarshan Aryal</p>
+            General Manager Hotel
+          </div>
+        </div>
+      </div>
+
+      <div class="discover-locations">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="discover-location-content">
+                <div class="best-resort-title">BEST RESORT</div>
+                <p class="discover-location-title">
+                  Discover<br />
+                  Our Locations
+                </p>
+                <p class="discover-location-text">
+                  A wonderful serenity has taken my entire soul, like sweet
+                  morning spring which I enjoy with my whole.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="discover-location-image">
+                <img src="assets/images/discover-location-hotel-room.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-facilities">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="hotel-facility-item">
+                  <img src="assets/images/spa-salon-icon.JPG" />
+                  <p class="facility-title">Spa and Salon</p>
+                  <p class="facility-text">
+                    A wonderful serenity has taken my entire soul, like sweet
+                    morning spring which I enjoy with my whole.
+                  </p>
+                  <a href="#"
+                    >READ MORE &nbsp; <i class="fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="hotel-facility-item">
+                  <img src="assets/images/bar-icon.JPG" />
+                  <p class="facility-title">Bar and Restaurant</p>
+                  <p class="facility-text">
+                    A wonderful serenity has taken my entire soul, like sweet
+                    morning spring which I enjoy with my whole.
+                  </p>
+                  <a href="#"
+                    >READ MORE &nbsp; <i class="fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="hotel-facility-item">
+                  <img src="assets/images/swimming-icon.JPG" />
+                  <p class="facility-title">Swimming Pool</p>
+                  <p class="facility-text">
+                    A wonderful serenity has taken my entire soul, like sweet
+                    morning spring which I enjoy with my whole.
+                  </p>
+                  <a href="#"
+                    >READ MORE &nbsp; <i class="fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summer-deals">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="summer-deals-image">
+                <img src="assets/images/beachside-pool.jpg" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="summer-deals-content">
+                <div class="summer-deals-wrapper">
+                  <p class="summer-deals-title">SUMMER DEALS</p>
+                  <p class="summer-deals-bold-title">
+                    A Simply Perfect Place To Get Lost. Up to 50% Discount!
+                  </p>
+                  <p class="summer-deals-text">
+                    A wonderful serenity has taken my entire soul, like sweet
+                    morning spring which I enjoy with my whole.
+                  </p>
+                  <button type="button">BOOK NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-rooms">
+        <div class="our-rooms-content">
+          <p class="luxury-hotel-title">LUXURY HOTEL</p>
+          <p class="our-rooms-title">Our Rooms</p>
+          <p class="our-rooms-text">
+            A wonderful serenity has taken my entire soul, like sweet <br />
+            morning spring which I enjoy with my whole heart this spot, which
+            was created.
+          </p>
+        </div>
+        <div class="container">
+          <div class="our-rooms-details-wrapper">
+            <div class="our-rooms-details">
+              <div class="hotel-room">
+                <div class="hotel-room-image">
+                  <div class="hotel-room-overlay"></div>
+                  <a href="#"></a>
+                  <div class="hotel-room-price">
+                    <span style="font-size: 10px; color: orange">FROM:</span
+                    ><span style="font-size: 14px; color: orange">
+                      Rs. 1000</span
+                    ><br />
+
+                    <span
+                      style="font-size: 14px; font-weight: 700; color: white"
+                      >GRAND DELUXE</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="hotel-room">
+                <div class="hotel-room-image">
+                  <div class="hotel-room-overlay"></div>
+                  <a href="#"></a>
+                  <div class="hotel-room-price">
+                    <span style="font-size: 10px; color: orange">FROM:</span
+                    ><span style="font-size: 14px; color: orange">
+                      Rs. 1000</span
+                    ><br />
+
+                    <span
+                      style="font-size: 14px; font-weight: 700; color: white"
+                      >SUPERIOR DELUXE</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="hotel-room">
+                <div class="hotel-room-image">
+                  <div class="hotel-room-overlay"></div>
+                  <a href="#"></a>
+                  <div class="hotel-room-price">
+                    <span style="font-size: 10px; color: orange">FROM:</span
+                    ><span style="font-size: 14px; color: orange">
+                      Rs. 1000</span
+                    ><br />
+
+                    <span
+                      style="font-size: 14px; font-weight: 700; color: white"
+                      >DELUXE KING ROOM</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <div class="newsletter-title"><p>SIGN UP TO OUR NEWSLETTER</p></div>
+        <div class="newsletter-description">
+          <p>
+            Discover the most exclusive <br />
+            before anyone
+          </p>
+        </div>
+        <div class="email-newsletter">
+          <div class="email-newsletter-wrapper">
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your email address..."
+            />
+            <button value="sign-up" type="submit">
+              <i class="fa fa-paper-plane"></i>&nbsp; SIGN UP
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="special-offer-wrapper">
+        <div class="special-offer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <p class="start-here">START HERE</p>
+                <p class="offer-title">Special Offer</p>
+                <p class="offer-description">
+                  A wonderful serenity has taken my entire soul, like sweet
+                  morning spring which I enjoy with my whole heart. I am alone,
+                  discover the most.
+                </p>
+              </div>
+              <div class="col-md-3">
+                <div class="offer">
+                  <div class="offer">
+                    <div class="offer-image">
+                      <div
+                        class="offer-image-overlay"
+                        style="
+                          background-image: url(../assets/images/BREAKFAST.jpg);
+                        "
+                      ></div>
+                    </div>
+                    <div class="offer-content">
+                      <p>SALE 20% OFF</p>
+                      BREAKFAST
+                      <div class="offer-price">
+                        <p>From</p>
+                        Rs. 299
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="offer">
+                  <div class="offer-image">
+                    <div
+                      class="offer-image-overlay"
+                      style="background-image: url(../assets/images/sauna.jpg)"
+                    ></div>
+                  </div>
+                  <div class="offer-content">
+                    <p>SALE 20% OFF</p>
+                    SAUNA
+                    <div class="offer-price">
+                      <p>From</p>
+                      Rs. 299
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="offer">
+                  <div class="offer-image">
+                    <div
+                      class="offer-image-overlay"
+                      style="
+                        background-image: url(../assets/images/parking.jpg);
+                      "
+                    ></div>
+                  </div>
+                  <div class="offer-content">
+                    <p>SALE 20% OFF</p>
+                    PARKING
+                    <div class="offer-price">
+                      <p>From</p>
+                      Rs. 299
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container"><div class="vertical-divider"></div></div>
+
+      <div class="testimonial">
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div
+              class="person-image"
+              style="
+                background-image: url(../assets/images/person-testimonial.jpg);
+              "
+            ></div>
+            <div class="person-details">
+              <p>Karin Thomas</p>
+              Manager Asian Discovery
+            </div>
+            <div class="testimonial-text">
+              <p>
+                <em
+                  >'Sitting on the high cliffs of the Amalfi Coast, Casa
+                  Angelina offers a sublime slice of modern minimalism on the
+                  Mediterranean, with an emphasis on elegant. Leverage agile
+                  frameworks to provide a robust synopsis.'</em
+                >
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div
+              class="person-image"
+              style="
+                background-image: url(../assets/images/person-testimonial.jpg);
+              "
+            ></div>
+            <div class="person-details">
+              <p>Karin Thomas</p>
+              Manager Asian Discovery
+            </div>
+            <div class="testimonial-text">
+              <p>
+                <em
+                  >'Sitting on the high cliffs of the Amalfi Coast, Casa
+                  Angelina offers a sublime slice of modern minimalism on the
+                  Mediterranean, with an emphasis on elegant. Leverage agile
+                  frameworks to provide a robust synopsis.'</em
+                >
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div
+              class="person-image"
+              style="
+                background-image: url(../assets/images/person-testimonial.jpg);
+              "
+            ></div>
+            <div class="person-details">
+              <p>Karin Thomas</p>
+              Manager Asian Discovery
+            </div>
+            <div class="testimonial-text">
+              <p>
+                <em
+                  >'Sitting on the high cliffs of the Amalfi Coast, Casa
+                  Angelina offers a sublime slice of modern minimalism on the
+                  Mediterranean, with an emphasis on elegant. Leverage agile
+                  frameworks to provide a robust synopsis.'</em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-logo">
+          <img src="assets/images/hotel sng logo color.png" />
+        </div>
+        <div class="footer-title">Hotel SNG</div>
+        <div class="vertical-divider"></div>
+        <div class="address-contact">
+          Anamnagar, Kathmandu <br />
+          info@hotelsng.com<br />
+          +977 9812345678
+        </div>
+        <div class="social-media-icons">
+          <div class="icons-list">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">HOME</a>
+                  <a href="">SPA BY GOLD</a>
+                  <a href="">GALLERY</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">HISTORY</a>
+                  <a href="">CONCIERGERIE</a>
+                  <a href="">BOOK A TABLE</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">ROOMS AND SUITES</a>
+                  <a href="">OFFERS</a>
+                  <a href="">SPA BY GOLD</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">RESTAURANT</a>
+                  <a href="">EVENTS & CATERING</a>
+                  <a href="">CONCIERGERIE</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">GOLD BAR</a>
+                  <a href="">CAREER</a>
+                  <a href="">ROOMS</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">EVENTS CALENDAR</a>
+                  <a href="">CONTACT US</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".testimonial-slide").slick({
+          prevArrow: false,
+          nextArrow: false,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 300,
+          dots: true,
+        });
+      });
+    </script>
+  </body>
+</html>

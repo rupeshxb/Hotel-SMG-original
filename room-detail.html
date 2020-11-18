@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel SNG</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="banner" id="banner-for-room">
+        <div class="background-overlay">
+          <div class="primary-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-12">
+                  <div class="first-navbar">
+                    <nav
+                      class="navbar navbar-expand-lg navbar-dark navbar-inverse"
+                    >
+                      <div class="navbar-logo">
+                        <img src="assets/images/hotel sng logo color.png" />
+                      </div>
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                      >
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="index.html"
+                              >Home <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Rooms
+                            </a>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <a class="dropdown-item" href="rooms.html"
+                                >View All Rooms</a
+                              >
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="rooms.html"
+                                >Grand Deluxe</a
+                              >
+                              <a class="dropdown-item" href="rooms.html"
+                                >Superior Deluxe</a
+                              >
+                              <a class="dropdown-item" href="rooms.html"
+                                >Deluxe King Room</a
+                              >
+                            </div>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                              >Services
+                              <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                              >Gallery <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Pages
+                            </a>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <a class="dropdown-item" href="#">Page 1</a>
+                              <a class="dropdown-item" href="#">Page 2</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Page 3</a>
+                            </div>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                              >Contact <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-md-5 col-12" style="margin: auto 0">
+                  <div class="second-navbar-wrapper">
+                    <div class="second-navbar">
+                      <div class="phone-no">
+                        <i class="fa fa-phone">&nbsp; Call:</i>
+                        <b>+977 9812345678</b>
+                        |
+                      </div>
+                      <div class="login">
+                        <div class="login-text">
+                          &nbsp; <i class="fa fa-user">&nbsp; Login &nbsp;</i>
+                        </div>
+                        <div class="book-now">
+                          <a href="#">BOOK NOW&nbsp;</a>
+                        </div>
+                        <div class="select-country">
+                          <select id="country" name="country">
+                            <option value="NP">NP</option>
+                            <option value="IN">IN</option>
+                            <option value="US">US</option>
+                            <option value="UK">UK</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-in-banner" id="single-room-text-in-banner">
+            <p class="banner-title">Single Rooms</p>
+            <div class="banner-subpage">
+              <a href="rooms.html"
+                >Rooms&nbsp;<i class="fa fa-chevron-right"></i>&nbsp;</a
+              ><span>Single Rooms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-section" id="room-section-for-single-room">
+        <div class="container">
+          <div class="room-row">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="room-section-details">
+                  <div class="room-pricing">
+                    FROM <span>Rs. 1000</span>/PER NIGHT
+                  </div>
+                  <p class="room-title">GRAND DELUXE</p>
+                  <div class="room-facility">
+                    <div class="facility-item">
+                      <img src="assets/images/png/guests.png" />&nbsp;2 Guests
+                    </div>
+                    <div class="facility-item">
+                      <img src="assets/images/png/bed.png" />&nbsp;2 Bedrooms
+                    </div>
+                    <div class="facility-item">
+                      <img src="assets/images/png/shower.png" />&nbsp;2
+                      Bathrooms
+                    </div>
+                  </div>
+                  <div class="amenities">
+                    <p>Amenities:</p>
+                    <div class="amenities-content">
+                      <ul>
+                        <li>BUTLER SERVICE</li>
+                        <li>DIRECT DIAL PHONE</li>
+                        <li>FREE WIFI</li>
+                      </ul>
+                      <ul>
+                        <li>HAIR DRYER</li>
+                        <li>PRIVATE POOL</li>
+                        <li>SAFE DEPOSIT BOX</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="room-description">
+                  <!-- <div class="room-description-title">Description:</div> -->
+                  <p>
+                    We’re halfway through the summer, but while plenty of people
+                    are kicking back and enjoying their vacations, the social
+                    media development teams likely aren’t doing the same. In the
+                    past two weeks alone, we’ve seen four big new updates that
+                    can directly impact the social marketing campaigns of
+                    hotels, resorts, and other businesses in the hospitality
+                    industry. Let’s take a close look at each one.
+                  </p>
+
+                  <p>
+                    We’ve gotten yet another new feature for Instagram Stories,
+                    and this time it’s the Chat sticker, which allows you to
+                    invite Story followers to join in on a new group chat.
+                    Instagram is currently advertising this as a way to
+                    jumpstart big group conversations or make plans. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Enim obcaecati
+                    vero aperiam, corrupti ab laudantium voluptate sit ipsum
+                    quis explicabo voluptas qui omnis nulla praesentium, facilis
+                    unde officiis perferendis atque! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quidem odio, ex architecto
+                    neque vero a enim minus libero omnis commodi culpa, mollitia
+                    sequi nemo explicabo quae impedit consectetur? Reiciendis,
+                    animi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slick slider for room images -->
+
+      <div class="room-photos-slider">
+        <div class="room-slide">
+          <div class="room-content">
+            <img src="assets/images/hotelroom1.jpg" />
+          </div>
+          <div class="room-content">
+            <img src="assets/images/hotelroom1.jpg" />
+          </div>
+          <div class="room-content">
+            <img src="assets/images/hotelroom1.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-logo">
+          <img src="assets/images/hotel sng logo color.png" />
+        </div>
+        <div class="footer-title">Hotel SNG</div>
+        <div class="vertical-divider"></div>
+        <div class="address-contact">
+          Anamnagar, Kathmandu <br />
+          info@hotelsng.com<br />
+          +977 9812345678
+        </div>
+        <div class="social-media-icons">
+          <div class="icons-list">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">HOME</a>
+                  <a href="">SPA BY GOLD</a>
+                  <a href="">GALLERY</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">HISTORY</a>
+                  <a href="">CONCIERGERIE</a>
+                  <a href="">BOOK A TABLE</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">ROOMS AND SUITES</a>
+                  <a href="">OFFERS</a>
+                  <a href="">SPA BY GOLD</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">RESTAURANT</a>
+                  <a href="">EVENTS & CATERING</a>
+                  <a href="">CONCIERGERIE</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">GOLD BAR</a>
+                  <a href="">CAREER</a>
+                  <a href="">ROOMS</a>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-item-list">
+                  <a href="">EVENTS CALENDAR</a>
+                  <a href="">CONTACT US</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".room-slide").slick({
+          centerMode: true,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
+          dots: false,
+        });
+      });
+    </script>
+  </body>
+</html>
