@@ -2555,11 +2555,34 @@ footer .social-media-icons ul li a:hover {
 
 .leave-message-section {
   text-align: center;
+  padding-top: 90px;
+}
+
+.leave-message-section .leave-message-title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: ui-monospace;
+  line-height: 110%;
+}
+
+.leave-message-section .leave-message-text {
+  padding-top: 20px;
+  font-family: "FontAwesome", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: grey;
+  padding-bottom: 20px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .leave-message-section .leave-message-input-fields {
   width: 80%;
   margin: 0 auto;
+}
+
+.leave-message-section .leave-message-input-fields .leave-message-person-detail {
+  padding-bottom: 10px;
 }
 
 .leave-message-section .leave-message-input-fields .leave-message-person-detail .col-md-4 {
@@ -2571,25 +2594,91 @@ footer .social-media-icons ul li a:hover {
   border: 1px solid #d3d3d3;
   line-height: 30px;
   padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .leave-message-section .leave-message-input-fields .leave-message-person-detail input::-webkit-input-placeholder {
-  font-size: 10px;
+  font-size: 12px;
   padding-left: 0px;
+  vertical-align: middle;
 }
 
 .leave-message-section .leave-message-input-fields .leave-message-person-detail input:-ms-input-placeholder {
-  font-size: 10px;
+  font-size: 12px;
   padding-left: 0px;
+  vertical-align: middle;
 }
 
 .leave-message-section .leave-message-input-fields .leave-message-person-detail input::-ms-input-placeholder {
-  font-size: 10px;
+  font-size: 12px;
   padding-left: 0px;
+  vertical-align: middle;
 }
 
 .leave-message-section .leave-message-input-fields .leave-message-person-detail input::placeholder {
-  font-size: 10px;
+  font-size: 12px;
   padding-left: 0px;
+  vertical-align: middle;
+}
+
+.leave-message-section .leave-message-input-fields .message-by-customer {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.leave-message-section .leave-message-input-fields .message-by-customer input {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 150px;
+}
+
+.leave-message-section .leave-message-input-fields .message-by-customer input::-webkit-input-placeholder {
+  font-size: 12px;
+  padding-left: 0px;
+}
+
+.leave-message-section .leave-message-input-fields .message-by-customer input:-ms-input-placeholder {
+  font-size: 12px;
+  padding-left: 0px;
+}
+
+.leave-message-section .leave-message-input-fields .message-by-customer input::-ms-input-placeholder {
+  font-size: 12px;
+  padding-left: 0px;
+}
+
+.leave-message-section .leave-message-input-fields .message-by-customer input::placeholder {
+  font-size: 12px;
+  padding-left: 0px;
+}
+
+.leave-message-section .leave-message-input-fields .message-submit-button {
+  padding-top: 25px;
+}
+
+.leave-message-section .leave-message-input-fields .message-submit-button button {
+  border: none;
+  background: #f78e57;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  outline: 0;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25) !important;
+          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25) !important;
 }
 /*# sourceMappingURL=style.css.map */
