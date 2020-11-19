@@ -2227,17 +2227,12 @@ footer {
     .message-by-customer {
       padding-left: 5px;
       padding-right: 5px;
-      input {
+      textarea {
         width: 100%;
         border: 1px solid #d3d3d3;
-        padding-left: 10px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 150px;
       }
-      input::placeholder {
+      textarea::placeholder {
         font-size: 12px;
-        padding-left: 0px;
       }
     }
     .message-submit-button {

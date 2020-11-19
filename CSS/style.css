@@ -2627,33 +2627,25 @@ footer .social-media-icons ul li a:hover {
   padding-right: 5px;
 }
 
-.leave-message-section .leave-message-input-fields .message-by-customer input {
+.leave-message-section .leave-message-input-fields .message-by-customer textarea {
   width: 100%;
   border: 1px solid #d3d3d3;
-  padding-left: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 150px;
 }
 
-.leave-message-section .leave-message-input-fields .message-by-customer input::-webkit-input-placeholder {
+.leave-message-section .leave-message-input-fields .message-by-customer textarea::-webkit-input-placeholder {
   font-size: 12px;
-  padding-left: 0px;
 }
 
-.leave-message-section .leave-message-input-fields .message-by-customer input:-ms-input-placeholder {
+.leave-message-section .leave-message-input-fields .message-by-customer textarea:-ms-input-placeholder {
   font-size: 12px;
-  padding-left: 0px;
 }
 
-.leave-message-section .leave-message-input-fields .message-by-customer input::-ms-input-placeholder {
+.leave-message-section .leave-message-input-fields .message-by-customer textarea::-ms-input-placeholder {
   font-size: 12px;
-  padding-left: 0px;
 }
 
-.leave-message-section .leave-message-input-fields .message-by-customer input::placeholder {
+.leave-message-section .leave-message-input-fields .message-by-customer textarea::placeholder {
   font-size: 12px;
-  padding-left: 0px;
 }
 
 .leave-message-section .leave-message-input-fields .message-submit-button {
