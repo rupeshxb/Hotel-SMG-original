@@ -2061,10 +2061,22 @@ footer {
     }
   }
   .menu-tab-content-all {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 40px;
     text-align: left;
+    .menu-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .image-for-food {
+        width: 100px;
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }
 

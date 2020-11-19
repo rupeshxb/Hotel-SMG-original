@@ -2410,10 +2410,32 @@ footer .social-media-icons ul li a:hover {
 }
 
 .restaurant-menu .menu-tab-content-all {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 40px;
   text-align: left;
+}
+
+.restaurant-menu .menu-tab-content-all .menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant-menu .menu-tab-content-all .menu-content .image-for-food {
+  width: 100px;
+}
+
+.restaurant-menu .menu-tab-content-all .menu-content .image-for-food img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 #banner-for-restaurant {
