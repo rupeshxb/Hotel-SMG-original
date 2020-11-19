@@ -2040,6 +2040,8 @@ footer {
   }
 }
 
+// --------------------- Restaurant menu ----------------------- //
+
 .restaurant-menu {
   padding-top: 60px;
   padding-bottom: 70px;
@@ -2262,3 +2264,42 @@ footer {
 }
 
 // ---------------------- Contact Section end ---------------------- //
+
+// ----------------------- Galley section ------------------------- //
+
+.gallery-menu {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  width: 100%;
+  .tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: 20px;
+    width: 425px;
+    margin: 0 auto;
+    button {
+      outline: none;
+      border: 0px;
+      background: transparent;
+      color: GREY;
+      font-size: 11px;
+      font-weight: 600;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    button.active {
+      color: $primary-color;
+      border-bottom: 1px solid $primary-color;
+    }
+    button:hover {
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+  .gallery-tab-content-all {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: left;
+  }
+}

@@ -2673,4 +2673,53 @@ footer .social-media-icons ul li a:hover {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25) !important;
           box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25) !important;
 }
+
+.gallery-menu {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  width: 100%;
+}
+
+.gallery-menu .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  line-height: 20px;
+  width: 425px;
+  margin: 0 auto;
+}
+
+.gallery-menu .tab button {
+  outline: none;
+  border: 0px;
+  background: transparent;
+  color: GREY;
+  font-size: 11px;
+  font-weight: 600;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gallery-menu .tab button.active {
+  color: #f78e57;
+  border-bottom: 1px solid #f78e57;
+}
+
+.gallery-menu .tab button:hover {
+  border-bottom: 1px solid #f78e57;
+}
+
+.gallery-menu .gallery-tab-content-all {
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
