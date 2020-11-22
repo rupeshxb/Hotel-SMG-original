@@ -2183,6 +2183,12 @@ footer {
   }
 }
 
+@media (max-width: 426px) {
+  .contact-section {
+    width: 100%;
+  }
+}
+
 // --------------- Contact: Leave message ---------------- //
 
 .leave-message-section {
@@ -2256,6 +2262,17 @@ footer {
   }
 }
 
+@media (max-width: 426px) {
+  .leave-message-text {
+    width: 100% !important;
+  }
+  .leave-message-person-detail {
+    input {
+      margin: 3px 0px;
+    }
+  }
+}
+
 .form-control:focus {
   color: #495057;
   background-color: #fff;
@@ -2265,7 +2282,7 @@ footer {
 
 // ---------------------- Contact Section end ---------------------- //
 
-// ----------------------- Galley section ------------------------- //
+// ----------------------- Gallery section ------------------------- //
 
 .gallery-menu {
   padding-top: 60px;
@@ -2304,6 +2321,19 @@ footer {
   }
 }
 
+@media (max-width: 426px) {
+  .gallery-menu {
+    .tab {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+    }
+  }
+  .gallery-tab-content-all {
+    width: 90% !important;
+  }
+}
+
 // Lightbox all //
 
 .gallery-tab-content-all {
@@ -2312,8 +2342,6 @@ footer {
     padding: 10px 10px;
     img {
       width: 100%;
-    }
-    img:hover {
     }
   }
   .lightbox-image-thumbnails {

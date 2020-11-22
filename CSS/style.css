@@ -2553,6 +2553,12 @@ footer .social-media-icons ul li a:hover {
   margin-bottom: 5px;
 }
 
+@media (max-width: 426px) {
+  .contact-section {
+    width: 100%;
+  }
+}
+
 .leave-message-section {
   text-align: center;
   padding-top: 90px;
@@ -2666,6 +2672,15 @@ footer .social-media-icons ul li a:hover {
   outline: 0;
 }
 
+@media (max-width: 426px) {
+  .leave-message-text {
+    width: 100% !important;
+  }
+  .leave-message-person-detail input {
+    margin: 3px 0px;
+  }
+}
+
 .form-control:focus {
   color: #495057;
   background-color: #fff;
@@ -2721,6 +2736,22 @@ footer .social-media-icons ul li a:hover {
   margin: 0 auto;
   padding-top: 40px;
   text-align: left;
+}
+
+@media (max-width: 426px) {
+  .gallery-menu .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+  }
+  .gallery-tab-content-all {
+    width: 90% !important;
+  }
 }
 
 .gallery-tab-content-all {
