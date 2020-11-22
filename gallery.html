@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel SNG | Galley</title>
+    <title>Hotel SNG | Gallery</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <link
       rel="stylesheet"
@@ -187,41 +187,323 @@
           <!-- Tab links -->
           <div class="tab">
             <button
-              class="tablinks"
+              class="my_tabs active"
+              id="roomButton"
+              onclick="menuItem(event, 'all')"
+            >
+              All
+            </button>
+            <button
+              class="my_tabs"
               id="roomButton"
               onclick="menuItem(event, 'room')"
             >
               ROOM
             </button>
-            <button class="tablinks" onclick="menuItem(event, 'food')">
+            <button class="my_tabs" onclick="menuItem(event, 'food')">
               FOOD
             </button>
-            <button class="tablinks" onclick="menuItem(event, 'spa')">
+            <button class="my_tabs" onclick="menuItem(event, 'spa')">
               SPA
             </button>
-            <button class="tablinks" onclick="menuItem(event, 'cooking')">
+            <button class="my_tabs" onclick="menuItem(event, 'cooking')">
               COOKING
             </button>
-            <button class="tablinks" onclick="menuItem(event, 'bath')">
+            <button class="my_tabs" onclick="menuItem(event, 'bath')">
               BATH
             </button>
-            <button class="tablinks" onclick="menuItem(event, 'pool')">
+            <button class="my_tabs" onclick="menuItem(event, 'pool')">
               POOL
             </button>
           </div>
 
           <!-- Tab content -->
           <div class="gallery-tab-content-all">
-            <div id="room" class="tabcontent">ROOM</div>
+            <div id="room">
+              <!-- LightBox of Bootstrap -->
+              <!-- Images used to open the lightbox -->
+              <div class="row">
+                <div class="col-md-4 lightbox-image room">
+                  <img
+                    src="assets/images/lightbox-roomjpg.jpg"
+                    onclick="openModal();currentSlide(1)"
+                    class="hover-shadow"
+                  />
+                </div>
 
-            <div id="food" class="tabcontent">FOOD</div>
+                <div class="col-md-4 lightbox-image room">
+                  <img
+                    src="assets/images/lightbox-room-2.jpg"
+                    onclick="openModal();currentSlide(2)"
+                    class="hover-shadow"
+                  />
+                </div>
 
-            <div id="spa" class="tabcontent">SPA</div>
+                <div class="col-md-4 lightbox-image food">
+                  <img
+                    src="assets/images/lightbox-roomjpg.jpg"
+                    onclick="openModal();currentSlide(3)"
+                    class="hover-shadow"
+                  />
+                </div>
 
-            <div id="cooking" class="tabcontent">COOKING</div>
+                <div class="col-md-4 lightbox-image food">
+                  <img
+                    src="assets/images/lightbox-roomjpg.jpg"
+                    onclick="openModal();currentSlide(4)"
+                    class="hover-shadow"
+                  />
+                </div>
 
-            <div id="bath" class="tabcontent">BATH</div>
-            <div id="pool" class="tabcontent">POOL</div>
+                <div class="col-md-4 lightbox-image spa">
+                  <img
+                    src="assets/images/lightbox-roomjpg.jpg"
+                    onclick="openModal();currentSlide(5)"
+                    class="hover-shadow"
+                  />
+                </div>
+
+                <div class="col-md-4 lightbox-image spa">
+                  <img
+                    src="assets/images/lightbox-room-2.jpg"
+                    onclick="openModal();currentSlide(6)"
+                    class="hover-shadow"
+                  />
+                </div>
+
+                <div class="col-md-4 lightbox-image cooking">
+                  <img
+                    src="assets/images/lightbox-roomjpg.jpg"
+                    onclick="openModal();currentSlide(7)"
+                    class="hover-shadow"
+                  />
+                </div>
+
+                <div class="col-md-4 lightbox-image cooking">
+                  <img
+                    src="assets/images/lightbox-hotelroom-3.jpg"
+                    onclick="openModal();currentSlide(8)"
+                    class="hover-shadow"
+                  />
+                </div>
+
+                <div class="col-md-4 lightbox-image bath">
+                  <img
+                    src="assets/images/lightbox-room-2.jpg"
+                    onclick="openModal();currentSlide(9)"
+                    class="hover-shadow"
+                  />
+                </div>
+
+                <div class="col-md-4 lightbox-image bath">
+                  <img
+                    src="assets/images/lightbox-room-2.jpg"
+                    onclick="openModal();currentSlide(10)"
+                    class="hover-shadow"
+                  />
+                </div>
+
+                <div class="col-md-4 lightbox-image pool">
+                  <img
+                    src="assets/images/lightbox-hotelroom-3.jpg"
+                    onclick="openModal();currentSlide(11)"
+                    class="hover-shadow"
+                  />
+                </div>
+
+                <div class="col-md-4 lightbox-image pool">
+                  <img
+                    src="assets/images/lightbox-roomjpg.jpg"
+                    onclick="openModal();currentSlide(12)"
+                    class="hover-shadow"
+                  />
+                </div>
+              </div>
+              <!-- The Modal/Lightbox -->
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="assets/images/lightbox-room-2.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="assets/images/lightbox-room-2.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="assets/images/lightbox-room-2.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="assets/images/lightbox-roomjpg.jpg" />
+                  </div>
+
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+
+                  <!-- Thumbnail image controls -->
+                  <div class="lightbox-image-thumbnails">
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-roomjpg.jpg"
+                        onclick="currentSlide(1)"
+                        alt="Nature"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-room-2.jpg"
+                        onclick="currentSlide(2)"
+                        alt="Snow"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-roomjpg.jpg"
+                        onclick="currentSlide(3)"
+                        alt="Mountains"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-roomjpg.jpg"
+                        onclick="currentSlide(4)"
+                        alt="Lights"
+                      />
+                    </div>
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-roomjpg.jpg"
+                        onclick="currentSlide(5)"
+                        alt="Nature"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-room-2.jpg"
+                        onclick="currentSlide(6)"
+                        alt="Snow"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-roomjpg.jpg"
+                        onclick="currentSlide(7)"
+                        alt="Mountains"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-hotelroom-3.jpg"
+                        onclick="currentSlide(8)"
+                        alt="Lights"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-roomjpg.jpg"
+                        onclick="currentSlide(9)"
+                        alt="Nature"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-room-2.jpg"
+                        onclick="currentSlide(10)"
+                        alt="Snow"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-hotelroom-3.jpg"
+                        onclick="currentSlide(11)"
+                        alt="Mountains"
+                      />
+                    </div>
+
+                    <div class="image-thumbnail-single">
+                      <img
+                        class="demo"
+                        src="assets/images/lightbox-roomjpg.jpg"
+                        onclick="currentSlide(12)"
+                        alt="Lights"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -336,20 +618,135 @@
     </script>
     <script>
       function menuItem(evt, itemName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+        // var i, tabcontent, tablinks;
+        // tabcontent = document.getElementsByClassName("tabcontent");
+        // for (i = 0; i < tabcontent.length; i++) {
+        //   tabcontent[i].style.display = "none";
+        // }
+        // tablinks = document.getElementsByClassName("tablinks");
+        // for (i = 0; i < tablinks.length; i++) {
+        //   tablinks[i].className = tablinks[i].className.replace(" active", "");
+        // }
+        // document.getElementById(itemName).style.display = "block";
+        // document.getElementsByClassName("lightbox-image").style.display =
+        //   "none";
+
+        // evt.currentTarget.className += " active";
+        var images = document.getElementsByClassName("lightbox-image");
+        if (itemName == "all") {
+          for (i = 0; i < images.length; i++) {
+            images[i].style.display = "block";
+          }
+        } else {
+          for (i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+          }
+          var showImages = document.getElementsByClassName(itemName);
+          for (i = 0; i < showImages.length; i++) {
+            showImages[i].style.display = "block";
+          }
         }
-        tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName("my_tabs");
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(itemName).style.display = "block";
         evt.currentTarget.className += " active";
       }
 
       document.getElementById("roomButton").click();
+    </script>
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
     </script>
   </body>
 </html>
