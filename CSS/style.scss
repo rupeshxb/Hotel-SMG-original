@@ -2309,9 +2309,11 @@ footer {
 .gallery-tab-content-all {
   .lightbox-image {
     overflow: hidden;
-    padding: 4px 4px;
+    padding: 10px 10px;
     img {
       width: 100%;
+    }
+    img:hover {
     }
   }
   .lightbox-image-thumbnails {
@@ -2461,11 +2463,13 @@ footer {
   }
 
   img.hover-shadow {
+    border-radius: 3px;
     transition: 0.3s;
   }
 
   .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    box-shadow: 2px 2px 4px -2px black;
   }
 }
 
