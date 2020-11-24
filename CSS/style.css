@@ -33,14 +33,14 @@
 
 .banner-subpage i {
   font-size: 14px;
-  color: #f78e57;
+  color: #ff6a00;
   font-weight: 100;
 }
 
 .banner-subpage a {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
-  color: #f78e57;
+  color: #ff6a00;
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
@@ -49,7 +49,7 @@
 
 .banner-subpage a:hover {
   text-decoration: none;
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 .banner-subpage span {
@@ -181,7 +181,7 @@
 }
 
 .second-navbar .login .book-now {
-  background-color: #f78e57;
+  background-color: #ff6a00;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,7 +203,7 @@
 }
 
 .second-navbar .login .book-now a {
-  background-color: #f78e57;
+  background-color: #ff6a00;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,7 +314,7 @@
 .text-in-banner .banner-subtitle {
   font-family: sans-serif;
   font-size: 9px;
-  color: #f78e57;
+  color: #ff6a00;
   letter-spacing: 3px;
   font-weight: 600;
   margin: 0;
@@ -361,7 +361,7 @@
   .text-in-banner .banner-subtitle {
     font-family: sans-serif;
     font-size: 9px;
-    color: #f78e57;
+    color: #ff6a00;
     letter-spacing: 3px;
     font-weight: 600;
     margin: 0;
@@ -609,7 +609,7 @@
 }
 
 .search-wrapper .button-container .search-button {
-  background-color: #f78e57;
+  background-color: #ff6a00;
   margin-right: 10px;
 }
 
@@ -618,7 +618,7 @@
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  background: #f78e57;
+  background: #ff6a00;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -711,7 +711,7 @@
 }
 
 .welcome .general-manager .manager-name {
-  color: #f78e57;
+  color: #ff6a00;
   font-size: 14px;
   font-weight: 600;
   margin: 10px 0px 5px 0px;
@@ -747,7 +747,7 @@
     color: grey;
   }
   .welcome .general-manager .manager-name {
-    color: #f78e57;
+    color: #ff6a00;
     font-size: 14px;
     font-weight: 600;
     margin: 10px 0px 5px 0px;
@@ -788,7 +788,7 @@
 .discover-location-content .best-resort-title {
   font-family: sans-serif;
   font-size: 9px;
-  color: #f78e57;
+  color: #ff6a00;
   letter-spacing: 3px;
   font-weight: 600;
 }
@@ -849,12 +849,12 @@
 }
 
 .hotel-facilities a i {
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 .hotel-facilities a:hover {
   text-decoration: none;
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 .hotel-facilities a:hover i {
@@ -891,11 +891,11 @@
     color: black;
   }
   .hotel-facilities a i {
-    color: #f78e57;
+    color: #ff6a00;
   }
   .hotel-facilities a:hover {
     text-decoration: none;
-    color: #f78e57;
+    color: #ff6a00;
   }
   .hotel-facilities a:hover i {
     color: black;
@@ -960,7 +960,7 @@
   font-size: 9px;
   letter-spacing: 1px;
   font-weight: 700;
-  background: #f78e57;
+  background: #ff6a00;
   outline: none;
   border: none;
   padding: 10px 30px;
@@ -1019,7 +1019,7 @@
     font-size: 9px;
     letter-spacing: 1px;
     font-weight: 700;
-    background: #f78e57;
+    background: #ff6a00;
     outline: none;
     border: none;
     padding: 10px 30px;
@@ -1241,12 +1241,12 @@
   font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 14px;
-  border-bottom: 2px solid #f78e57;
+  border-bottom: 2px solid #ff6a00;
   padding-bottom: 3px;
 }
 
 .room-section .room-row .view-room-details a:hover {
-  border-bottom: 3px solid #f78e57;
+  border-bottom: 3px solid #ff6a00;
 }
 
 .room-section .room-row:nth-child(2n-1) .room-section-image {
@@ -1351,7 +1351,7 @@
 }
 
 .room-section .room-section-details .amenities ul li::marker {
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 .room-section .room-pricing {
@@ -1361,7 +1361,7 @@
 }
 
 .room-section .room-pricing span {
-  color: #f78e57;
+  color: #ff6a00;
   font-size: 20px;
   letter-spacing: 0px;
   font-family: math;
@@ -1466,7 +1466,7 @@
 }
 
 .other-facilities .other-facilities-content ul i {
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 .popular-facilities {
@@ -1512,7 +1512,7 @@
 
 .room-photos-slider .slick-prev:before,
 .room-photos-slider .slick-next:before {
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 .room-photos-slider .room-slide {
@@ -1564,7 +1564,7 @@
   border: 0px;
   background: transparent;
   padding: 0px;
-  color: #f78e57;
+  color: #ff6a00;
   font-size: 12px;
   font-weight: 500;
 }
@@ -1598,11 +1598,11 @@
     font-weight: 600;
     letter-spacing: 0.5px;
     font-size: 14px;
-    border-bottom: 2px solid #f78e57;
+    border-bottom: 2px solid #ff6a00;
     padding-bottom: 3px;
   }
   .room-section .room-row .view-room-details a:hover {
-    border-bottom: 3px solid #f78e57;
+    border-bottom: 3px solid #ff6a00;
   }
   .room-section .room-row:nth-child(2n-1) .room-section-image {
     margin-left: 0px;
@@ -1644,7 +1644,7 @@
     padding-top: 20px;
   }
   .room-section .room-section-details .room-pricing span {
-    color: #f78e57;
+    color: #ff6a00;
     font-size: 30px;
     letter-spacing: 0px;
     font-family: fantasy;
@@ -1687,11 +1687,11 @@
     font-weight: 600;
     letter-spacing: 0.5px;
     font-size: 14px;
-    border-bottom: 2px solid #f78e57;
+    border-bottom: 2px solid #ff6a00;
     padding-bottom: 3px;
   }
   .room-section .room-row .view-room-details a:hover {
-    border-bottom: 3px solid #f78e57;
+    border-bottom: 3px solid #ff6a00;
   }
   .room-section .room-row:nth-child(2n-1) .room-section-image {
     margin-left: 0px;
@@ -1725,7 +1725,7 @@
     padding-top: 20px;
   }
   .room-section .room-section-details .room-facility .room-pricing span {
-    color: #f78e57;
+    color: #ff6a00;
     font-size: 30px;
     letter-spacing: 0px;
     font-family: fantasy;
@@ -1809,7 +1809,7 @@
 
 .newsletter .email-newsletter .email-newsletter-wrapper button {
   width: 20%;
-  background: #f78e57;
+  background: #ff6a00;
   border: none;
   outline: none;
   font-size: 10px;
@@ -1874,7 +1874,7 @@
   }
   .newsletter .email-newsletter .email-newsletter-wrapper button {
     width: 30%;
-    background: #f78e57;
+    background: #ff6a00;
     border: none;
     outline: none;
     font-size: 10px;
@@ -1990,7 +1990,7 @@ footer .social-media-icons ul li a {
 }
 
 footer .social-media-icons ul li a:hover {
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 @media (max-width: 426px) {
@@ -2082,7 +2082,7 @@ footer .social-media-icons ul li a:hover {
     color: inherit;
   }
   footer .social-media-icons ul li a:hover {
-    color: #f78e57;
+    color: #ff6a00;
   }
 }
 
@@ -2176,7 +2176,7 @@ footer .social-media-icons ul li a:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #f78e57;
+  background: #ff6a00;
   text-align: center;
   font-size: 12px;
   letter-spacing: 0;
@@ -2270,7 +2270,7 @@ footer .social-media-icons ul li a:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #f78e57;
+    background: #ff6a00;
     text-align: center;
     font-size: 12px;
     letter-spacing: 0;
@@ -2409,7 +2409,7 @@ footer .social-media-icons ul li a:hover {
 .restaurant-section .happy-hours .happy-hours-title {
   font-family: sans-serif;
   font-size: 9px;
-  color: #f78e57;
+  color: #ff6a00;
   letter-spacing: 3px;
   font-weight: 600;
   margin: 0;
@@ -2455,7 +2455,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 .restaurant-menu .tab button.active {
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 .restaurant-menu .menu-tab-content-all {
@@ -2515,7 +2515,7 @@ footer .social-media-icons ul li a:hover {
   width: 100px;
   font-size: 14px;
   font-weight: 600;
-  color: #f78e57;
+  color: #ff6a00;
 }
 
 #banner-for-restaurant {
@@ -2539,7 +2539,7 @@ footer .social-media-icons ul li a:hover {
 .contact-section .need-help-title {
   font-family: sans-serif;
   font-size: 9px;
-  color: #f78e57;
+  color: #ff6a00;
   letter-spacing: 3px;
   font-weight: 600;
   padding-bottom: 5px;
@@ -2584,7 +2584,7 @@ footer .social-media-icons ul li a:hover {
 
 .contact-section .contact-panel i {
   width: 20px;
-  color: #f78e57;
+  color: #ff6a00;
   font-size: 15px;
 }
 
@@ -2704,7 +2704,7 @@ footer .social-media-icons ul li a:hover {
 
 .leave-message-section .leave-message-input-fields .message-submit-button button {
   border: none;
-  background: #f78e57;
+  background: #ff6a00;
   color: white;
   font-size: 11px;
   font-weight: 600;
@@ -2767,12 +2767,12 @@ footer .social-media-icons ul li a:hover {
 }
 
 .gallery-menu .tab button.active {
-  color: #f78e57;
-  border-bottom: 1px solid #f78e57;
+  color: #ff6a00;
+  border-bottom: 1px solid #ff6a00;
 }
 
 .gallery-menu .tab button:hover {
-  border-bottom: 1px solid #f78e57;
+  border-bottom: 1px solid #ff6a00;
 }
 
 .gallery-menu .gallery-tab-content-all {
@@ -2947,7 +2947,7 @@ footer .social-media-icons ul li a:hover {
   top: 2px;
   left: 2px;
   border-radius: 72px;
-  background: #f78e57;
+  background: #ff6a00;
 }
 
 .gallery-tab-content-all .caption-container {
@@ -3023,6 +3023,10 @@ footer .social-media-icons ul li a:hover {
 
 .search-room-section .room-section-wrapper .room-section .room-section-details .amenities p {
   margin-bottom: 3px;
+}
+
+.search-room-section .room-section-wrapper .room-section:last-child .room-row {
+  border-bottom: none;
 }
 
 #banner-for-search-room {
@@ -3109,7 +3113,7 @@ footer .social-media-icons ul li a:hover {
 .price-selection .price-selection-bottom .price-selection-select button {
   outline: none;
   border: none;
-  background: #f78e57;
+  background: #ff6a00;
   color: white;
   border-radius: 5px;
   line-height: 32px;
@@ -3119,15 +3123,19 @@ footer .social-media-icons ul li a:hover {
   font-size: 15px;
 }
 
+.price-selection .price-selection-bottom .price-selection-select button:hover {
+  background-color: #f98d40;
+}
+
 .package-section h1 {
   text-align: center;
-  color: #f78e57;
+  color: #ff6a00;
   padding: 30px;
 }
 
 .blog-section h1 {
   text-align: center;
-  color: #f78e57;
+  color: #ff6a00;
   padding: 30px;
 }
 /*# sourceMappingURL=style.css.map */

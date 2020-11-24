@@ -1,4 +1,4 @@
-$primary-color: #f78e57;
+$primary-color: #ff6a00;
 
 // ------------------ Banner -------------------- //
 
@@ -2575,6 +2575,11 @@ footer {
         margin-bottom: 3px;
       }
     }
+    .room-section:last-child {
+      .room-row {
+        border-bottom: none;
+      }
+    }
   }
 }
 
@@ -2647,6 +2652,9 @@ footer {
         font-weight: 700;
         font-family: monospace;
         font-size: 15px;
+      }
+      button:hover {
+        background-color: #f98d40;
       }
     }
   }
