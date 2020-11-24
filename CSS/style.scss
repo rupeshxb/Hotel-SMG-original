@@ -86,7 +86,7 @@ $primary-color: #f78e57;
 
 .background-overlay {
   position: absolute;
-  background-color: #00000047;
+  background-color: #b527271c;
   top: 0;
   left: 0;
   width: 100%;
@@ -2540,12 +2540,18 @@ footer {
 // ------------------- Search for room ----------------- //
 
 .search-room-section {
-  background: #edebf5e0;
   .search-wrapper {
     bottom: 0px;
     position: relative;
-    .bottom-search-bar{
+    .container {
+      padding: 0px;
+      margin: 0px;
+      max-width: 100%;
+    }
+    .bottom-search-bar {
       width: 100%;
+      padding-left: 15%;
+      padding-right: 15%;
     }
   }
   .room-section {
@@ -2561,6 +2567,9 @@ footer {
 
 #banner-for-search-room {
   height: 110px;
+  .background-overlay {
+    background: #4c2054;
+  }
 }
 
 .price-selection {

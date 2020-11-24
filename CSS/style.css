@@ -81,7 +81,7 @@
 
 .background-overlay {
   position: absolute;
-  background-color: #00000047;
+  background-color: #b527271c;
   top: 0;
   left: 0;
   width: 100%;
@@ -2983,17 +2983,21 @@ footer .social-media-icons ul li a:hover {
           box-shadow: 2px 2px 4px -2px black;
 }
 
-.search-room-section {
-  background: #edebf5e0;
-}
-
 .search-room-section .search-wrapper {
   bottom: 0px;
   position: relative;
 }
 
+.search-room-section .search-wrapper .container {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+}
+
 .search-room-section .search-wrapper .bottom-search-bar {
   width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .search-room-section .room-section {
@@ -3010,6 +3014,10 @@ footer .social-media-icons ul li a:hover {
 
 #banner-for-search-room {
   height: 110px;
+}
+
+#banner-for-search-room .background-overlay {
+  background: #4c2054;
 }
 
 .price-selection {
