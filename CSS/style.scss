@@ -1288,6 +1288,19 @@ $primary-color: #f78e57;
     letter-spacing: 0.5px;
     font-size: 14px;
   }
+  button {
+    outline: none;
+    border: 0px;
+    background: transparent;
+    padding: 0px;
+    color: $primary-color;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  button:focus {
+    border: 0px;
+    outline: 0px;
+  }
 }
 .room-description-title {
   font-size: 25px;
@@ -2502,3 +2515,13 @@ footer {
 }
 
 // Lightbox all //
+
+// ------------------ Package section ------------------ //
+
+.package-section {
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    padding: 30px;
+  }
+}

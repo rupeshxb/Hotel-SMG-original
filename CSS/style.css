@@ -1530,6 +1530,21 @@
   font-size: 14px;
 }
 
+.room-description button {
+  outline: none;
+  border: 0px;
+  background: transparent;
+  padding: 0px;
+  color: #f78e57;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.room-description button:focus {
+  border: 0px;
+  outline: 0px;
+}
+
 .room-description-title {
   font-size: 25px;
   font-weight: 400;
@@ -2937,5 +2952,11 @@ footer .social-media-icons ul li a:hover {
   border: none;
   -webkit-box-shadow: 2px 2px 4px -2px black;
           box-shadow: 2px 2px 4px -2px black;
+}
+
+.package-section h1 {
+  text-align: center;
+  color: #f78e57;
+  padding: 30px;
 }
 /*# sourceMappingURL=style.css.map */
