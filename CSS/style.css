@@ -13,6 +13,9 @@
 .banner .primary-navbar {
   margin-top: 20px;
   font-family: "FontAwesome", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(4, 0, 0, 0.04)));
+  background: linear-gradient(black, rgba(4, 0, 0, 0.04));
+  margin-top: 0;
 }
 
 .banner .primary-navbar .nav-logo img {
@@ -81,7 +84,7 @@
 
 .background-overlay {
   position: absolute;
-  background-color: #19080842;
+  background-color: transparent;
   top: 0;
   left: 0;
   width: 100%;
@@ -3142,9 +3145,62 @@ footer .social-media-icons ul li a:hover {
   padding: 30px;
 }
 
-.blog-section h1 {
-  text-align: center;
+.blog-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blog-section .blog {
+  background-color: #f9f8fd;
+  margin-bottom: 10px;
+}
+
+.blog-section .blog .blog-image {
+  overflow: hidden;
+}
+
+.blog-section .blog .blog-image img {
+  width: 100%;
+}
+
+.blog-section .blog .blog-title {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.blog-section .blog .blog-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.blog-section .blog .blog-title a:hover {
+  color: #696969;
+}
+
+.blog-section .blog .blog-date {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.blog-section .blog .blog-date a {
   color: #ff6a00;
-  padding: 30px;
+}
+
+.blog-section .blog .blog-date a:hover {
+  color: #ffa667;
+}
+
+.blog-section .blog .blog-date span {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
