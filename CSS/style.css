@@ -106,10 +106,19 @@
 .navbar-logo {
   width: 100px;
   margin-right: 60px;
+  position: relative;
 }
 
 .navbar-logo img {
   width: 100%;
+}
+
+.navbar-logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .second-navbar-wrapper {

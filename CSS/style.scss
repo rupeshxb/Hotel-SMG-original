@@ -106,8 +106,16 @@ $primary-color: #ff6a00;
 .navbar-logo {
   width: 100px;
   margin-right: 60px;
+  position: relative;
   img {
     width: 100%;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 
