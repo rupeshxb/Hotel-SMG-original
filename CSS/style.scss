@@ -2540,6 +2540,7 @@ footer {
 // ------------------- Search for room ----------------- //
 
 .search-room-section {
+  background-color: #efeff4;
   .search-wrapper {
     bottom: 0px;
     position: relative;
@@ -2554,14 +2555,26 @@ footer {
       padding-right: 15%;
     }
   }
-  .room-section {
-    padding-bottom: 0px !important;
-  }
-  .room-section:nth-child(n + 2) {
-    padding-top: 10px !important;
-  }
   .room-row {
     border-bottom: 1.5px solid #777777;
+  }
+}
+
+.search-room-section {
+  .room-section-wrapper {
+    .room-section:first-child {
+      padding-top: 40px;
+    }
+    .room-section {
+      padding-top: 10px;
+      .facility-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .room-section-details .amenities p {
+        margin-bottom: 3px;
+      }
+    }
   }
 }
 
@@ -2576,8 +2589,67 @@ footer {
   box-shadow: 0px 2px 4px 0px #d9d9d9;
   background: #ffffff;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   margin-top: 20px;
+  .price-selection-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    .price-selection-title {
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: 700;
+      margin: 0px;
+      letter-spacing: 1px;
+      padding-bottom: 5px;
+    }
+    .price-selection-cost {
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: 700;
+      margin: 0px;
+      letter-spacing: 1px;
+      padding-bottom: 5px;
+    }
+  }
+  .price-selection-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .price-selection-description {
+      ul {
+        list-style-type: none;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        li {
+          font-size: 14px;
+          font-family: monospace;
+          i {
+            color: white;
+            background-color: #9cd37f;
+            font-size: 15px;
+            padding: 3px;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    .price-selection-select {
+      button {
+        outline: none;
+        border: none;
+        background: $primary-color;
+        color: white;
+        border-radius: 5px;
+        line-height: 32px;
+        width: 90px;
+        font-weight: 700;
+        font-family: monospace;
+        font-size: 15px;
+      }
+    }
+  }
 }
 
 // ------------------ Package section ------------------ //
