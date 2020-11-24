@@ -2954,7 +2954,17 @@ footer .social-media-icons ul li a:hover {
           box-shadow: 2px 2px 4px -2px black;
 }
 
+#banner-for-search-room {
+  height: 110px;
+}
+
 .package-section h1 {
+  text-align: center;
+  color: #f78e57;
+  padding: 30px;
+}
+
+.blog-section h1 {
   text-align: center;
   color: #f78e57;
   padding: 30px;

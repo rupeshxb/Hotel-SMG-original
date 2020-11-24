@@ -2515,10 +2515,25 @@ footer {
 }
 
 // Lightbox all //
+// ------------------- Search for room ----------------- //
+
+#banner-for-search-room {
+  height: 110px;
+}
 
 // ------------------ Package section ------------------ //
 
 .package-section {
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    padding: 30px;
+  }
+}
+
+// ------------------ Blogs Section ----------------- //
+
+.blog-section {
   h1 {
     text-align: center;
     color: $primary-color;
