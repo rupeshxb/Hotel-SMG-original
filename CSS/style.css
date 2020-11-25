@@ -3206,7 +3206,7 @@ footer .social-media-icons ul li a:hover {
   border-radius: 5px;
   padding: 15px;
   font-family: "FontAwesome", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: grey;
 }
@@ -3235,6 +3235,62 @@ footer .social-media-icons ul li a:hover {
 
 .package-section .package-overview .package-overview-description {
   padding-bottom: 10px;
+}
+
+.package-section .package-overview .divider-in-package-overview {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.package-section .package-overview .package-include-list p {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.package-section .package-overview .package-include-list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.package-section .package-overview .package-include-list ul li {
+  position: relative;
+  padding: 5px 0px;
+  font-size: 14px;
+}
+
+.package-section .package-overview .package-include-list ul li:before {
+  position: absolute;
+  left: -20px;
+  content: "\f00c";
+  display: inline-block;
+  color: #87bb26;
+}
+
+.package-section .package-overview .package-exclude-list p {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.package-section .package-overview .package-exclude-list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.package-section .package-overview .package-exclude-list ul li {
+  position: relative;
+  padding: 5px 0px;
+  font-size: 14px;
+}
+
+.package-section .package-overview .package-exclude-list ul li:before {
+  position: absolute;
+  left: -20px;
+  content: "\f00d";
+  display: inline-block;
+  color: #ce6055;
 }
 
 .package-section .divider-in-package {
