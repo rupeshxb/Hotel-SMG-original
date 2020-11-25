@@ -2751,6 +2751,40 @@ footer {
     .package-overview-description {
       padding-bottom: 10px;
     }
+    .package-enquiry-modal {
+      background-color: white;
+      margin-bottom: 10px;
+      button {
+        background-color: $primary-color;
+        outline: none;
+        border: none;
+      }
+      button:hover {
+        background: #ff8900;
+      }
+      .form-control {
+        margin-bottom: 10px;
+      }
+      .form-control::placeholder {
+        font-size: 12px;
+      }
+      .modal-body {
+        p {
+          margin-bottom: 3px;
+          color: black;
+        }
+      }
+      .modal-header {
+        padding: 5px 1rem;
+        .modal-title {
+          color: black;
+          font-weight: 600;
+        }
+        button {
+          background: transparent;
+        }
+      }
+    }
     .divider-in-package-overview {
       margin-top: 25px;
       margin-bottom: 25px;

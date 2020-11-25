@@ -3237,6 +3237,59 @@ footer .social-media-icons ul li a:hover {
   padding-bottom: 10px;
 }
 
+.package-section .package-overview .package-enquiry-modal {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.package-section .package-overview .package-enquiry-modal button {
+  background-color: #ff6a00;
+  outline: none;
+  border: none;
+}
+
+.package-section .package-overview .package-enquiry-modal button:hover {
+  background: #ff8900;
+}
+
+.package-section .package-overview .package-enquiry-modal .form-control {
+  margin-bottom: 10px;
+}
+
+.package-section .package-overview .package-enquiry-modal .form-control::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.package-section .package-overview .package-enquiry-modal .form-control:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.package-section .package-overview .package-enquiry-modal .form-control::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.package-section .package-overview .package-enquiry-modal .form-control::placeholder {
+  font-size: 12px;
+}
+
+.package-section .package-overview .package-enquiry-modal .modal-body p {
+  margin-bottom: 3px;
+  color: black;
+}
+
+.package-section .package-overview .package-enquiry-modal .modal-header {
+  padding: 5px 1rem;
+}
+
+.package-section .package-overview .package-enquiry-modal .modal-header .modal-title {
+  color: black;
+  font-weight: 600;
+}
+
+.package-section .package-overview .package-enquiry-modal .modal-header button {
+  background: transparent;
+}
+
 .package-section .package-overview .divider-in-package-overview {
   margin-top: 25px;
   margin-bottom: 25px;
