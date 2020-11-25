@@ -2684,10 +2684,80 @@ footer {
 // ------------------ Package section ------------------ //
 
 .package-section {
-  h1 {
-    text-align: center;
-    color: $primary-color;
-    padding: 30px;
+  margin: 0 auto;
+  width: 75%;
+  padding-bottom: 70px;
+  .package-quick-info {
+    padding-top: 70px;
+    .package-quick-info-title {
+      font-size: 25px;
+      font-weight: 600;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+    }
+    .package-quick-info-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      padding-bottom: 35px;
+      .package-quick-info-fact {
+        font-family: "FontAwesome", sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: grey;
+        i {
+          color: $primary-color;
+          margin-right: 2px;
+          font-size: 18px;
+        }
+        span {
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          color: black;
+          font-family: sans-serif;
+        }
+      }
+    }
+  }
+  .package-overview {
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: "FontAwesome", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: grey;
+    .overview-title {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      color: black;
+    }
+    .package-overview-note {
+      border: 1px solid #e4e4e4;
+      width: 90%;
+      line-height: 45px;
+      background: #ffe5d3;
+      border-radius: 5px;
+      font-size: 13px;
+      color: #0b2a58;
+      font-weight: 500;
+      font-family: emoji, sans-serif;
+      border-color: #ffc8a2;
+      padding-left: 10px;
+    }
+    .package-overview-description {
+      padding-bottom: 10px;
+    }
+  }
+  .divider-in-package {
+    width: 100px;
+    height: 2.5px;
+    background-color: $primary-color;
+    margin-top: 5px;
+    margin-bottom: 35px;
   }
 }
 
