@@ -84,7 +84,7 @@
 
 .background-overlay {
   position: absolute;
-  background-color: transparent;
+  background-color: #3341588f;
   top: 0;
   left: 0;
   width: 100%;
@@ -407,7 +407,7 @@
 }
 
 .search-wrapper {
-  bottom: -95px;
+  bottom: -110px;
   position: relative;
 }
 
@@ -2808,6 +2808,16 @@ footer .social-media-icons ul li a:hover {
   .gallery-tab-content-all {
     width: 90% !important;
   }
+}
+
+.video-gallery-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 0px;
+}
+
+.video-gallery-section .video {
+  padding: 5px;
 }
 
 .gallery-tab-content-all {

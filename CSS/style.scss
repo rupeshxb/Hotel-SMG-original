@@ -88,7 +88,7 @@ $primary-color: #ff6a00;
 
 .background-overlay {
   position: absolute;
-  background-color: transparent;
+  background-color: #3341588f;
   top: 0;
   left: 0;
   width: 100%;
@@ -337,7 +337,7 @@ $primary-color: #ff6a00;
 // --------------------Search wrapper ----------------------------//
 
 .search-wrapper {
-  bottom: -95px;
+  bottom: -110px;
   position: relative;
   .top-search-bar {
     color: white;
@@ -2376,6 +2376,17 @@ footer {
   }
   .gallery-tab-content-all {
     width: 90% !important;
+  }
+}
+
+// ------------ Video Gallery section ------------ //
+
+.video-gallery-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 0px;
+  .video {
+    padding: 5px;
   }
 }
 
