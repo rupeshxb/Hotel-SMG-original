@@ -533,11 +533,21 @@
   left: -20px;
 }
 
+.search-wrapper .mobile-checkdate input {
+  color: grey;
+}
+
 .search-wrapper .item {
   padding: 45px 20px 20px 20px;
   position: relative;
   color: #707070;
   font-size: 14px;
+}
+
+.search-wrapper .item #adult,
+.search-wrapper .item #children,
+.search-wrapper .item #rooms {
+  color: grey;
 }
 
 .search-wrapper .item .item-sup {
@@ -550,7 +560,7 @@
   letter-spacing: 0.5px;
   font-size: 10px;
   font-weight: 500;
-  color: #aba4a4;
+  color: black;
   font-family: system-ui;
 }
 

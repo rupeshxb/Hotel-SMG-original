@@ -420,10 +420,12 @@ $primary-color: #ff6a00;
     justify-content: space-between;
     .checkdate-wrapper {
       position: relative;
-
       span {
         left: -20px;
       }
+    }
+    input {
+      color: grey;
     }
   }
   .item {
@@ -431,6 +433,11 @@ $primary-color: #ff6a00;
     position: relative;
     color: #707070;
     font-size: 14px;
+    #adult,
+    #children,
+    #rooms {
+      color: grey;
+    }
 
     .item-sup {
       position: absolute;
@@ -442,7 +449,7 @@ $primary-color: #ff6a00;
       letter-spacing: 0.5px;
       font-size: 10px;
       font-weight: 500;
-      color: #aba4a4;
+      color: black;
       font-family: system-ui;
     }
     .search-logo {
