@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url(../assets/fonts/SourceCodePro-Regular.ttf);
+}
+
 .banner {
   background-image: url(../hotelroom.jpg);
   background-size: cover;
@@ -2609,6 +2614,59 @@ footer .social-media-icons ul li a:hover {
   margin-bottom: 5px;
 }
 
+#map {
+  height: 450px;
+}
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+  margin-top: 10px;
+  line-height: 32px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 2px 6px 0px #909090;
+          box-shadow: 0px 2px 6px 0px #909090;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: transparent;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 @media (max-width: 426px) {
   .contact-section {
     width: 100%;
@@ -3052,7 +3110,7 @@ footer .social-media-icons ul li a:hover {
 }
 
 #banner-for-search-room {
-  height: 110px;
+  height: 70px;
 }
 
 #banner-for-search-room .background-overlay {

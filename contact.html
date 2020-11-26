@@ -24,6 +24,10 @@
       integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
       crossorigin="anonymous"
     />
+    <!-- Get API key for map -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY&libraries=places"></script> -->
+    <!-- Get API key for map -->
   </head>
   <body>
     <main>
@@ -324,16 +328,46 @@
           </div>
         </div>
       </div>
-      <div class="map-in-contact">
-        <iframe
-          width="100%"
-          height="319"
-          src="https://maps.google.com/maps?q=kathmandu&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-        ></iframe>
+
+      <div class="map-in-contact-with-direction">
+        <!-- Input field for origin to destination, it will work only if google map API key is available -->
+        <div>
+          <input
+            id="origin-input"
+            type="text"
+            placeholder="Enter an origin location"
+          />
+
+          <input
+            id="destination-input"
+            type="text"
+            placeholder="Enter a destination location"
+          />
+
+          <div id="mode-selector" class="controls">
+            <input
+              type="radio"
+              name="type"
+              id="changemode-walking"
+              checked="checked"
+            />
+            <label for="changemode-walking">Walking</label>
+
+            <input type="radio" name="type" id="changemode-transit" />
+            <label for="changemode-transit">Transit</label>
+
+            <input type="radio" name="type" id="changemode-driving" />
+            <label for="changemode-driving">Driving</label>
+          </div>
+        </div>
+
+        <!-- Input field for origin to destination, it will work only if google map API key is available -->
+
+        <!-- Map only -->
+        <div id="map" style="width: 100%; height: 300px">
+          <!-- Map is shown through JS, changing latitude and longitude in JS will change the map ---->
+        </div>
+        <!-- Map Only -->
       </div>
 
       <footer>
@@ -444,5 +478,131 @@
         });
       });
     </script>
+
+    <!-- Script for input field in directions for map starts-->
+
+    <!-- NOTE: Will work only if google map API key is available -->
+
+    <script>
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          mapTypeControl: false,
+          center: { lat: 27.73166378199755, lng: 85.33431959714908 },
+          zoom: 15,
+        });
+
+        new AutocompleteDirectionsHandler(map);
+      }
+
+      /**
+       * @constructor
+       */
+      function AutocompleteDirectionsHandler(map) {
+        this.map = map;
+        this.originPlaceId = null;
+        this.destinationPlaceId = null;
+        this.travelMode = "WALKING";
+        var originInput = document.getElementById("origin-input");
+        var destinationInput = document.getElementById("destination-input");
+        var modeSelector = document.getElementById("mode-selector");
+        this.directionsService = new google.maps.DirectionsService();
+        this.directionsDisplay = new google.maps.DirectionsRenderer();
+        this.directionsDisplay.setMap(map);
+
+        var originAutocomplete = new google.maps.places.Autocomplete(
+          originInput,
+          { placeIdOnly: true }
+        );
+        var destinationAutocomplete = new google.maps.places.Autocomplete(
+          destinationInput,
+          { placeIdOnly: true }
+        );
+
+        this.setupClickListener("changemode-walking", "WALKING");
+        this.setupClickListener("changemode-transit", "TRANSIT");
+        this.setupClickListener("changemode-driving", "DRIVING");
+
+        this.setupPlaceChangedListener(originAutocomplete, "ORIG");
+        this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
+
+        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
+          originInput
+        );
+        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
+          destinationInput
+        );
+        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
+          modeSelector
+        );
+      }
+
+      // Sets a listener on a radio button to change the filter type on Places
+      // Autocomplete.
+      AutocompleteDirectionsHandler.prototype.setupClickListener = function (
+        id,
+        mode
+      ) {
+        var radioButton = document.getElementById(id);
+        var me = this;
+        radioButton.addEventListener("click", function () {
+          me.travelMode = mode;
+          me.route();
+        });
+      };
+
+      AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function (
+        autocomplete,
+        mode
+      ) {
+        var me = this;
+        autocomplete.bindTo("bounds", this.map);
+        autocomplete.addListener("place_changed", function () {
+          var place = autocomplete.getPlace();
+          if (!place.place_id) {
+            window.alert("Please select an option from the dropdown list.");
+            return;
+          }
+          if (mode === "ORIG") {
+            me.originPlaceId = place.place_id;
+          } else {
+            me.destinationPlaceId = place.place_id;
+          }
+          me.route();
+        });
+      };
+
+      AutocompleteDirectionsHandler.prototype.route = function () {
+        if (!this.originPlaceId || !this.destinationPlaceId) {
+          return;
+        }
+        var me = this;
+
+        this.directionsService.route(
+          {
+            origin: { placeId: this.originPlaceId },
+            destination: { placeId: this.destinationPlaceId },
+            travelMode: this.travelMode,
+          },
+          function (response, status) {
+            if (status === "OK") {
+              me.directionsDisplay.setDirections(response);
+            } else {
+              window.alert("Directions request failed due to " + status);
+            }
+          }
+        );
+      };
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzX0m57VYOK9WhGx2jTbj33vPW7MCLj6c&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <!-- Script for input field in directions for map ends-->
   </body>
 </html>
