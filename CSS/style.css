@@ -250,7 +250,7 @@
 }
 
 .second-navbar .login .book-now a:hover {
-  color: black;
+  background-color: #ff852e;
 }
 
 .second-navbar .login .fa-user:before {
@@ -285,6 +285,16 @@
 
 .login-text {
   margin: auto 0;
+}
+
+.login-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.login-text a:hover {
+  color: #ff6a00;
+  text-decoration: none;
 }
 
 .phone-no {
@@ -622,24 +632,36 @@
 .search-wrapper .button-container {
   width: 15%;
   margin: auto 0;
-  background-color: inherit;
 }
 
 .search-wrapper .button-container .search-button {
-  background-color: #ff6a00;
   margin-right: 10px;
 }
 
 .search-wrapper .button-container button {
-  border: none;
-  height: 100%;
+  border: 1px solid #ff6a00 !important;
+  line-height: 38px;
   width: 100%;
-  border-radius: 5px;
-  background: #ff6a00;
-  color: white;
-  font-weight: bold;
+  background: transparent !important;
+  color: #ff6a00;
+  font-weight: 100;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.search-wrapper .button-container button:hover {
+  color: white;
+  background-color: #ff6a00 !important;
+  border: 1px solid #ff6a00 !important;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-wrapper .button-container button:focus {
+  outline: none;
+  border: none;
 }
 
 @media (max-width: 1200px) and (max-width: 1200px) {
@@ -982,6 +1004,10 @@
   border: none;
   padding: 10px 30px;
   color: white;
+}
+
+.summer-deals .summer-deals-content button:hover {
+  background-color: #ff852e;
 }
 
 @media (max-width: 425px) {
@@ -1836,6 +1862,10 @@
   border-bottom-right-radius: 50px;
   -webkit-box-shadow: 0px 5px 10px 1px #00000026;
           box-shadow: 0px 5px 10px 1px #00000026;
+}
+
+.newsletter .email-newsletter .email-newsletter-wrapper button:hover {
+  background: #ff852e;
 }
 
 @media (max-width: 426px) {
@@ -3223,6 +3253,15 @@ footer .social-media-icons ul li a:hover {
 
 .price-selection .price-selection-bottom .price-selection-select button:hover {
   background-color: #f98d40;
+}
+
+.price-selection:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.5, 1.5);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.5, 1.5);
+  -webkit-box-shadow: 0px 3px 4px 0px #d9d9d9;
+          box-shadow: 0px 3px 4px 0px #d9d9d9;
 }
 
 .package-section {

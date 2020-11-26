@@ -198,7 +198,7 @@ $primary-color: #ff6a00;
         right: 0;
       }
       a:hover {
-        color: black;
+        background-color: #ff852e;
       }
     }
     .fa-user:before {
@@ -227,6 +227,14 @@ $primary-color: #ff6a00;
 
 .login-text {
   margin: auto 0;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
 }
 .phone-no {
   display: inline-block;
@@ -486,21 +494,30 @@ $primary-color: #ff6a00;
   .button-container {
     width: 15%;
     margin: auto 0;
-    background-color: inherit;
     .search-button {
-      background-color: $primary-color;
       margin-right: 10px;
     }
     button {
-      border: none;
-      height: 100%;
+      border: 1px solid $primary-color !important;
+      line-height: 38px;
       width: 100%;
-      border-radius: 5px;
-      background: $primary-color;
-      color: white;
-      font-weight: bold;
+      background: transparent !important;
+      color: $primary-color;
+      font-weight: 100;
       text-transform: uppercase;
-      font-size: 22px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    button:hover {
+      color: white;
+      background-color: $primary-color !important;
+      border: 1px solid $primary-color !important;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+    button:focus {
+      outline: none;
+      border: none;
     }
   }
 }
@@ -832,6 +849,9 @@ $primary-color: #ff6a00;
       border: none;
       padding: 10px 30px;
       color: white;
+    }
+    button:hover {
+      background-color: #ff852e;
     }
   }
 }
@@ -1570,6 +1590,9 @@ $primary-color: #ff6a00;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
         box-shadow: 0px 5px 10px 1px #00000026;
+      }
+      button:hover {
+        background: #ff852e;
       }
     }
   }
@@ -2760,6 +2783,12 @@ footer {
       }
     }
   }
+}
+
+.price-selection:hover {
+  transform: scale(1.02);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.5, 1.5);
+  box-shadow: 0px 3px 4px 0px #d9d9d9;
 }
 
 // ------------------ Package section ------------------ //
