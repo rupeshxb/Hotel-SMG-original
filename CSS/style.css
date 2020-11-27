@@ -3,6 +3,16 @@
   src: url(../assets/fonts/SourceCodePro-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
 .banner {
   background-image: url(../hotelroom.jpg);
   background-size: cover;
@@ -3414,6 +3424,11 @@ footer .social-media-icons ul li a:hover {
   background: transparent;
 }
 
+.package-section .package-overview .package-enquiry-modal .modal-header button:focus {
+  border: 0 !important;
+  outline: none !important;
+}
+
 .package-section .package-overview .divider-in-package-overview {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -3476,6 +3491,113 @@ footer .social-media-icons ul li a:hover {
   background-color: #ff6a00;
   margin-top: 5px;
   margin-bottom: 35px;
+}
+
+.all-packages-background {
+  background-color: #f6f8fb;
+  padding-top: 60px;
+}
+
+.all-packages-section {
+  background-color: white;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.all-packages-section .package-item {
+  border: 1px;
+  margin-top: 30px;
+}
+
+.all-packages-section .package-item .package-item-image {
+  width: 100%;
+  height: 232px;
+  overflow: hidden;
+}
+
+.all-packages-section .package-item .package-item-image img {
+  width: 100%;
+}
+
+.all-packages-section .package-item .package-item-description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.all-packages-section .package-item .package-item-description .package-item-title {
+  font-family: "Montserrat-bold";
+  font-size: 25px;
+  line-height: 1.23;
+  letter-spacing: -0.5px;
+}
+
+.all-packages-section .package-item .package-item-description .package-item-duration-location {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: grey;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.all-packages-section .package-item .package-item-description .package-item-duration-location i {
+  color: #ff6a00;
+  font-size: 18px;
+}
+
+.all-packages-section .package-item .package-item-description .package-item-description-text {
+  font-family: "Montserrat";
+  color: #969696;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.all-packages-section .package-item .package-item-pricing {
+  text-align: center;
+  padding: 30px 0px;
+  height: 100%;
+}
+
+.all-packages-section .package-item .package-item-pricing .package-item-pricing-box {
+  width: 80%;
+  height: 100%;
+  border-left: 1.5px solid #d8d8d8;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #5f5f5f;
+}
+
+.all-packages-section .package-item .package-item-pricing .package-item-pricing-box del {
+  color: #ff5656;
+  font-size: 13.5px;
+}
+
+.all-packages-section .package-item .package-item-pricing .package-item-pricing-box p:nth-child(1) {
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+
+.all-packages-section .package-item .package-item-pricing .package-item-pricing-box p:nth-child(3) {
+  font-family: "Montserrat-bold";
+  font-size: 20px;
+}
+
+.all-packages-section:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-box-shadow: 0px 2px 3px 0px #c4c4c4;
+          box-shadow: 0px 2px 3px 0px #c4c4c4;
+  cursor: pointer;
 }
 
 .blog-section {
