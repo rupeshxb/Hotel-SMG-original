@@ -144,6 +144,19 @@ $primary-color: #ff6a00;
   font-family: "Fira Sans";
 }
 
+.dropdown-divider {
+  margin: 0px !important;
+}
+
+.dropdown-menu {
+  padding: 0px !important;
+  border-radius: 0.2rem !important;
+}
+
+.dropdown-item:hover {
+  color: $primary-color !important;
+}
+
 .navbar-logo {
   width: 100px;
   margin-right: 60px;
@@ -560,7 +573,7 @@ $primary-color: #ff6a00;
       margin-right: 10px;
     }
     button {
-      border: 1px solid $primary-color !important;
+      border: 1.5px solid $primary-color !important;
       line-height: 38px;
       width: 100%;
       background: transparent !important;
@@ -568,7 +581,7 @@ $primary-color: #ff6a00;
       font-weight: 100;
       text-transform: uppercase;
       font-size: 18px;
-      border-radius: 5px;
+      border-radius: 3px;
     }
     button:hover {
       color: white;

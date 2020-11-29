@@ -143,6 +143,19 @@
   font-family: "Fira Sans";
 }
 
+.dropdown-divider {
+  margin: 0px !important;
+}
+
+.dropdown-menu {
+  padding: 0px !important;
+  border-radius: 0.2rem !important;
+}
+
+.dropdown-item:hover {
+  color: #ff6a00 !important;
+}
+
 .navbar-logo {
   width: 100px;
   margin-right: 60px;
@@ -703,7 +716,7 @@
 }
 
 .search-wrapper .button-container button {
-  border: 1px solid #ff6a00 !important;
+  border: 1.5px solid #ff6a00 !important;
   line-height: 38px;
   width: 100%;
   background: transparent !important;
@@ -711,7 +724,7 @@
   font-weight: 100;
   text-transform: uppercase;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .search-wrapper .button-container button:hover {
