@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap");
 @font-face {
   font-family: "SourceCodePro";
   src: url(../assets/fonts/SourceCodePro-Regular.ttf);
@@ -27,10 +28,11 @@
 
 .banner .primary-navbar {
   margin-top: 20px;
-  font-family: "FontAwesome", sans-serif;
+  font-family: "Fira Sans";
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(4, 0, 0, 0.04)));
   background: linear-gradient(black, rgba(4, 0, 0, 0.04));
   margin-top: 0;
+  font-weight: 600;
 }
 
 .banner .primary-navbar .nav-logo img {
@@ -138,6 +140,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Fira Sans";
 }
 
 .navbar-logo {
@@ -514,9 +517,8 @@
   display: -ms-flexbox;
   display: flex;
   background: white;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-shadow: 0px 5px 10px #d8d6d6;
           box-shadow: 0px 5px 10px #d8d6d6;
   width: 70%;
@@ -3052,6 +3054,12 @@ footer .social-media-icons ul li a:hover {
   padding: 5px;
 }
 
+@media (max-width: 426px) {
+  .video-gallery-section {
+    width: 100%;
+  }
+}
+
 .gallery-tab-content-all {
   /* The Modal (background) */
   /* Modal Content */
@@ -3067,6 +3075,7 @@ footer .social-media-icons ul li a:hover {
 .gallery-tab-content-all .lightbox-image {
   overflow: hidden;
   padding: 10px 10px;
+  width: 100%;
 }
 
 .gallery-tab-content-all .lightbox-image img {
