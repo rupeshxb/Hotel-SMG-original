@@ -1892,6 +1892,12 @@ footer {
 }
 
 @media (max-width: 426px) {
+  .copyright-container-wrapper {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 426px) {
   footer {
     background: #f9f8fd;
     text-align: center;
@@ -1936,14 +1942,18 @@ footer {
       border-bottom: 1px solid #dedada;
       .footer-item-list {
         padding-bottom: 10px;
-      }
-      a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: grey;
-        padding: 3px 0px;
         text-align: left;
+        p{
+          text-align: left;
+        }
+        a {
+          display: block;
+          text-align: left;
+          text-decoration: none;
+          color: grey;
+          padding: 3px 0px;
+          text-align: left;
+        }
       }
     }
     .social-media-icons {
@@ -1975,6 +1985,8 @@ footer {
     }
   }
 }
+
+
 
 // --------------- Special Offer ------------------- //
 

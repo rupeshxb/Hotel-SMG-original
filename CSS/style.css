@@ -2205,6 +2205,12 @@ footer .social-media-icons ul li a:hover {
 }
 
 @media (max-width: 426px) {
+  .copyright-container-wrapper {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 426px) {
   footer {
     background: #f9f8fd;
     text-align: center;
@@ -2250,10 +2256,14 @@ footer .social-media-icons ul li a:hover {
   }
   footer .footer-content .footer-item-list {
     padding-bottom: 10px;
+    text-align: left;
   }
-  footer .footer-content a {
+  footer .footer-content .footer-item-list p {
+    text-align: left;
+  }
+  footer .footer-content .footer-item-list a {
     display: block;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: grey;
     padding: 3px 0px;
