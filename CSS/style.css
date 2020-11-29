@@ -2173,6 +2173,37 @@ footer .social-media-icons ul li a:hover {
   color: #ff6a00;
 }
 
+.copyright-container {
+  text-align: center;
+  font-family: "Fira Sans";
+}
+
+.copyright-container .copyright-container-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+.copyright-container .copyright-container-wrapper a {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+.copyright-container .copyright-container-wrapper a:hover {
+  color: #ff6a00;
+}
+
 @media (max-width: 426px) {
   footer {
     background: #f9f8fd;
