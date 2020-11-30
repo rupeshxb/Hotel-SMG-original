@@ -867,5 +867,40 @@
         }
       }
     </script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <script>
+      function buttonDropdown(event) {
+        // console.log();
+        var target = document.getElementById(
+          event.target.getAttribute("data-target")
+        );
+        var allDropdown = document.getElementsByClassName("dropdown-content");
+
+        for (i = 0; i < allDropdown.length; i++) {
+          if (target != allDropdown[i]) {
+            allDropdown[i].style.display = "none";
+          }
+        }
+
+        var css = target.style.display;
+        console.log(css);
+        if (!css || css == "none") {
+          target.style.display = "block";
+        } else {
+          target.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
