@@ -367,21 +367,7 @@ $primary-color: #ff6a00;
 }
 
 .select-country {
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 30px;
-  text-align: center;
-  select {
-    height: inherit;
-    border: none;
-    outline: none;
-    background: #464646;
-    color: white;
-    font-size: 10px;
-    font-weight: 500;
-  }
+  display: none;
 }
 
 .login-text {
