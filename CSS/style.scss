@@ -45,14 +45,6 @@ $primary-color: #ff6a00;
   }
 }
 
-#banner-for-room {
-  height: 350px;
-}
-
-#banner-for-contact {
-  height: 350px;
-}
-
 #single-room-text-in-banner {
   padding-top: 55px;
 }
@@ -208,14 +200,13 @@ $primary-color: #ff6a00;
 
 #mySidenav {
   .dropdown {
-    float: left;
     overflow: hidden;
     .dropbtn {
       font-size: 17px;
       border: none;
       outline: none;
       color: white;
-      padding: 14px 16px;
+      padding: 8px 8px 8px 32px;
       background-color: inherit;
       font-family: inherit;
       margin: 0;
@@ -226,7 +217,7 @@ $primary-color: #ff6a00;
 #mySidenav {
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -715,9 +706,10 @@ $primary-color: #ff6a00;
   }
 }
 
-@media (max-width: 1200px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .bottom-search-bar {
     width: 90% !important;
+    padding: 0px !important;
   }
 }
 
@@ -2465,8 +2457,15 @@ footer {
   }
 }
 
-#banner-for-restaurant {
+#banner-for-other-pages {
   height: 350px;
+}
+
+#banner-for-rooms {
+  height: 80px;
+  .background-overlay {
+    background: #4e1456;
+  }
 }
 
 @media (max-width: 992px) {

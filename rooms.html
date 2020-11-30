@@ -26,8 +26,65 @@
     />
   </head>
   <body>
-    <main>
-      <div class="banner" id="banner-for-search-room">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="nav-content"><a href="index.html">Home</a></div>
+      <div class="nav-content">
+        <div class="dropdown">
+          <button
+            class="dropbtn"
+            onclick="buttonDropdown(event)"
+            class="dropbtn"
+            data-target="roomsDropdown"
+          >
+            Rooms <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div id="roomsDropdown" class="dropdown-content">
+          <a href="rooms.html">View all rooms</a>
+          <a href="room-detail.html">Grand Deluxe</a>
+          <a href="room-detail.html">Superior Deluxe</a>
+          <a href="room-detail.html">Deluxe King Room</a>
+        </div>
+      </div>
+      <div class="nav-content"><a href="packages.html">Packages</a></div>
+      <div class="nav-content">
+        <div class="dropdown">
+          <button
+            onclick="buttonDropdown(event)"
+            class="dropbtn"
+            data-target="galleryDropdown"
+          >
+            Gallery <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div id="galleryDropdown" class="dropdown-content">
+          <a href="gallery.html">Images Gallery</a>
+          <a href="gallery-video.html">Video Gallery</a>
+        </div>
+      </div>
+      <div class="nav-content"><a href="contact.html">Contact</a></div>
+      <div class="nav-content">
+        <div class="dropdown">
+          <button
+            onclick="buttonDropdown(event)"
+            class="dropbtn"
+            data-target="buttonDropdownContent"
+          >
+            More <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div id="buttonDropdownContent" class="dropdown-content">
+          <a href="restaurant.html">Restaurant and bar</a>
+          <a href="search-for-room.html">Search Room</a>
+          <a href="blog.html">Blog</a>
+        </div>
+      </div>
+    </div>
+    <main id="main">
+      <div class="banner" id="banner-for-rooms">
         <div class="background-overlay">
           <div class="primary-navbar">
             <div class="container">
@@ -35,7 +92,7 @@
                 <div class="col-md-7 col-12">
                   <div class="first-navbar">
                     <nav
-                      class="navbar navbar-expand-lg navbar-dark navbar-inverse"
+                      class="navbar navbar-static-top navbar-expand-lg navbar-dark navbar-inverse"
                     >
                       <div class="navbar-logo">
                         <div>
@@ -43,16 +100,11 @@
                           <a href="index.html"></a>
                         </div>
                       </div>
-                      <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        <span class="navbar-toggler-icon"></span>
+                      <button class="navbar-toggler" type="button">
+                        <span
+                          class="navbar-toggler-icon"
+                          onclick="openNav()"
+                        ></span>
                       </button>
 
                       <div
