@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arsenal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap");
 @font-face {
   font-family: "SourceCodePro";
   src: url(../assets/fonts/SourceCodePro-Regular.ttf);
@@ -834,6 +836,9 @@
   .modal-backdrop {
     z-index: 0 !important;
   }
+  .search-wrapper {
+    bottom: 20%;
+  }
   .search-wrapper .bottom-search-bar {
     display: block;
     -webkit-box-shadow: none;
@@ -869,6 +874,12 @@
     letter-spacing: 0.5px;
     font-size: 14px;
     border-radius: 3px;
+  }
+}
+
+@media (max-width: 290px) {
+  .search-wrapper {
+    bottom: -270px;
   }
 }
 
@@ -2818,7 +2829,11 @@ footer .social-media-icons ul li a:hover {
 }
 
 #banner-for-other-pages {
-  height: 350px;
+  height: 310px;
+}
+
+#banner-for-other-pages .text-in-banner {
+  padding-top: 50px;
 }
 
 #banner-for-rooms {
@@ -3999,5 +4014,59 @@ footer .social-media-icons ul li a:hover {
   font-size: 12px;
   font-weight: 300;
   font-family: sans-serif;
+}
+
+.about-us-divider {
+  width: 20%;
+  height: 3px;
+  background: #ff6a00;
+}
+
+.about-us-section .about-us-main {
+  font-family: "Raleway";
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-us-section .about-us-main p {
+  font-size: 35px;
+  font-family: "Noto Serif JP";
+  font-weight: 900;
+}
+
+.about-us-section .about-us-main .about-us-main-image img {
+  width: 100%;
+}
+
+.about-us-section .mission {
+  text-align: center;
+}
+
+.about-us-section .mission p {
+  font-size: 35px;
+  font-family: "Noto Serif JP";
+  font-weight: 900;
+}
+
+.about-us-section .mission .mission-icons {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 70px;
+}
+
+.about-us-section .mission .mission-icons .mission-item .mission-item-image img {
+  height: 100px;
+  border: 1px solid #575756;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.about-us-section .mission .mission-icons .mission-item .mission-item-name {
+  font-family: "Raleway";
+  padding-top: 10px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
