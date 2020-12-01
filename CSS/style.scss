@@ -27,9 +27,9 @@ $primary-color: #ff6a00;
   background-attachment: fixed;
   background-position-x: center;
   background-position-y: bottom;
-  height: 530px;
+  height: 95vh;
   width: 100%;
-  position: relative;
+  // position: absolute;
   font-family: monospace;
   .primary-navbar {
     margin-top: 20px;
@@ -118,7 +118,6 @@ $primary-color: #ff6a00;
 //---------------- Background overlay over banner ------------------//
 
 .background-overlay {
-  position: absolute;
   background-color: #3341588f;
   top: 0;
   left: 0;
@@ -515,8 +514,9 @@ $primary-color: #ff6a00;
 // --------------------Search wrapper ----------------------------//
 
 .search-wrapper {
-  bottom: -110px;
-  position: relative;
+  bottom: 1px;
+  position: absolute;
+  width: 100%;
   .top-search-bar {
     color: white;
     display: flex;

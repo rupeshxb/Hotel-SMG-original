@@ -21,9 +21,8 @@
   background-attachment: fixed;
   background-position-x: center;
   background-position-y: bottom;
-  height: 530px;
+  height: 95vh;
   width: 100%;
-  position: relative;
   font-family: monospace;
 }
 
@@ -112,7 +111,6 @@
 }
 
 .background-overlay {
-  position: absolute;
   background-color: #3341588f;
   top: 0;
   left: 0;
@@ -569,8 +567,9 @@
 }
 
 .search-wrapper {
-  bottom: -110px;
-  position: relative;
+  bottom: 1px;
+  position: absolute;
+  width: 100%;
 }
 
 .search-wrapper .top-search-bar {
