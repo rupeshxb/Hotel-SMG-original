@@ -2836,6 +2836,12 @@ footer .social-media-icons ul li a:hover {
   padding-top: 50px;
 }
 
+@media (max-width: 768px) {
+  #banner-for-other-pages {
+    height: 360px;
+  }
+}
+
 #banner-for-rooms {
   height: 80px;
 }
@@ -4074,5 +4080,194 @@ footer .social-media-icons ul li a:hover {
   font-family: "Raleway";
   padding-top: 10px;
   font-weight: 600;
+}
+
+@media (max-width: 426px) {
+  .about-us-section .mission {
+    text-align: center;
+  }
+  .about-us-section .mission p {
+    font-size: 35px;
+    font-family: "Noto Serif JP";
+    font-weight: 900;
+  }
+  .about-us-section .mission .mission-icons {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+}
+
+.why-smg .why-smg-title {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Noto Serif JP";
+  font-weight: 900;
+}
+
+.why-smg .why-smg-text {
+  font-family: "Raleway";
+}
+
+.why-smg .why-smg-text li::marker {
+  color: #ff6a00;
+}
+
+@media (max-width: 768px) {
+  .about-us-overview {
+    padding-bottom: 10px;
+  }
+  .mission-item {
+    margin-bottom: 20px;
+  }
+}
+
+#map-in-reach #mode-selector {
+  top: 40px !important;
+  left: 0px !important;
+}
+
+.reach-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.reach-section .reach-text {
+  padding-bottom: 10px;
+  font-family: "Fira Sans";
+  font-size: 14px;
+}
+
+.reach-section .reach-text-title {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #ff6a00;
+  letter-spacing: 3px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.team-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.team-section .team-heading {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Raleway";
+  color: black;
+}
+
+.team-section .team-heading .team-heading-title {
+  font-size: 31px;
+  font-weight: 700;
+  font-family: ui-monospace;
+  color: black;
+}
+
+.team-section .team-all {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.team-section .team-all .team-member {
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0px 2px 4px 0px #bebebe;
+          box-shadow: 0px 2px 4px 0px #bebebe;
+}
+
+.team-section .team-all .team-member .team-member-image {
+  overflow: hidden;
+}
+
+.team-section .team-all .team-member .team-member-image img {
+  width: 100%;
+}
+
+.team-section .team-all .team-member .team-member-text {
+  font-size: 12px;
+  font-family: "Raleway";
+  color: black;
+  letter-spacing: 1px;
+}
+
+.team-section .team-all .team-member .team-member-text .team-member-name {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Arsenal";
+  color: black;
+}
+
+.team-section .team-all .team-member .team-member-text .team-member-position {
+  color: #ff6a00;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "FontAwesome", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .team-section .team-heading {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "Raleway";
+    color: black;
+  }
+  .team-section .team-heading .team-heading-title {
+    font-size: 31px;
+    font-weight: 700;
+    font-family: ui-monospace;
+    color: black;
+  }
+  .team-section .team-all {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .team-section .team-all .team-member {
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: 0px 2px 4px 0px #bebebe;
+            box-shadow: 0px 2px 4px 0px #bebebe;
+  }
+  .team-section .team-all .team-member .team-member-image {
+    overflow: hidden;
+  }
+  .team-section .team-all .team-member .team-member-image img {
+    width: 100%;
+  }
+  .team-section .team-all .team-member .team-member-text {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .team-section .team-all .team-member .team-member-text .team-member-name {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Arsenal";
+    color: black;
+  }
+  .team-section .team-all .team-member .team-member-text .team-member-position {
+    color: #ff6a00;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "FontAwesome", sans-serif;
+    letter-spacing: 1px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

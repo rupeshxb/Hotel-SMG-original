@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel SNG | Our Team</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="nav-content"><a href="index.html">Home</a></div>
+      <div class="nav-content">
+        <div class="dropdown">
+          <button
+            class="dropbtn"
+            onclick="buttonDropdown(event)"
+            class="dropbtn"
+            data-target="roomsDropdown"
+          >
+            Rooms <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div id="roomsDropdown" class="dropdown-content">
+          <a href="rooms.html">View all rooms</a>
+          <a href="room-detail.html">Grand Deluxe</a>
+          <a href="room-detail.html">Superior Deluxe</a>
+          <a href="room-detail.html">Deluxe King Room</a>
+        </div>
+      </div>
+      <div class="nav-content"><a href="packages.html">Packages</a></div>
+      <div class="nav-content">
+        <div class="dropdown">
+          <button
+            onclick="buttonDropdown(event)"
+            class="dropbtn"
+            data-target="galleryDropdown"
+          >
+            Gallery <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div id="galleryDropdown" class="dropdown-content">
+          <a href="gallery.html">Images Gallery</a>
+          <a href="gallery-video.html">Video Gallery</a>
+        </div>
+      </div>
+      <div class="nav-content"><a href="contact.html">Contact</a></div>
+      <div class="nav-content">
+        <div class="dropdown">
+          <button
+            onclick="buttonDropdown(event)"
+            class="dropbtn"
+            data-target="buttonDropdownContent"
+          >
+            More <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div id="buttonDropdownContent" class="dropdown-content">
+          <a href="restaurant.html">Restaurant and bar</a>
+          <a href="search-for-room.html">Search Room</a>
+          <a href="blog.html">Blog</a>
+          <a href="about-us">About Us</a>
+          <a href="our-team">Our Team</a>
+          <a href="reach">How to Reach</a>
+        </div>
+      </div>
+    </div>
+    <main id="main">
+      <div class="banner" id="banner-for-other-pages">
+        <div class="background-overlay">
+          <div class="primary-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-12">
+                  <div class="first-navbar">
+                    <nav
+                      class="navbar navbar-static-top navbar-expand-lg navbar-dark navbar-inverse"
+                    >
+                      <div class="navbar-logo">
+                        <div>
+                          <img src="assets/images/hotel sng logo color.png" />
+                          <a href="index.html"></a>
+                        </div>
+                      </div>
+                      <button class="navbar-toggler" type="button">
+                        <span
+                          class="navbar-toggler-icon"
+                          onclick="openNav()"
+                        ></span>
+                      </button>
+
+                      <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                      >
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="index.html"
+                              >Home <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Rooms
+                            </a>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <a class="dropdown-item" href="rooms.html"
+                                >View All Rooms</a
+                              >
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="room-detail.html"
+                                >Grand Deluxe</a
+                              >
+                              <a class="dropdown-item" href="room-detail.html"
+                                >Superior Deluxe</a
+                              >
+                              <a class="dropdown-item" href="room-detail.html"
+                                >Deluxe King Room</a
+                              >
+                            </div>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="packages.html"
+                              >Packages
+                              <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Gallery
+                            </a>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <a class="dropdown-item" href="gallery.html"
+                                >Image Gallery</a
+                              >
+                              <a class="dropdown-item" href="gallery-video.html"
+                                >Video Gallery</a
+                              >
+                            </div>
+                          </li>
+
+                          <li class="nav-item active">
+                            <a class="nav-link" href="contact.html"
+                              >Contact <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              More
+                            </a>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <a class="dropdown-item" href="restaurant.html"
+                                >Restaurant and Bar</a
+                              >
+                              <a
+                                class="dropdown-item"
+                                href="search-for-room.html"
+                                >Search Room</a
+                              >
+
+                              <a class="dropdown-item" href="blog.html">Blog</a>
+                              <a class="dropdown-item" href="about-us.html"
+                                >About us</a
+                              >
+                              <a class="dropdown-item" href="our-team.html"
+                                >Our Team</a
+                              >
+                              <a class="dropdown-item" href="reach.html"
+                                >How to Reach</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-md-5 col-12" style="margin: auto 0">
+                  <div class="second-navbar-wrapper">
+                    <div class="second-navbar">
+                      <div class="phone-no">
+                        <i class="fa fa-phone">&nbsp; Call:</i>
+                        <b>+977 9812345678</b>
+                        |
+                      </div>
+                      <div class="login">
+                        <div class="login-text">
+                          &nbsp;&nbsp;<a href="login.html"
+                            ><i class="fa fa-user">&nbsp;</i>Login</a
+                          >&nbsp;&nbsp;
+                        </div>
+                        <div class="book-now">
+                          <a href="search-for-room.html">BOOK NOW&nbsp;</a>
+                        </div>
+                        <div class="select-country">
+                          <select id="country" name="country">
+                            <option value="NP">NP</option>
+                            <option value="IN">IN</option>
+                            <option value="US">US</option>
+                            <option value="UK">UK</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-in-banner">
+            <p class="banner-title">Our Team</p>
+            <div class="banner-subpage">
+              <a href="index.html"
+                >Home&nbsp;<i class="fa fa-chevron-right"></i>&nbsp;</a
+              ><span>Our Team</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-section">
+        <div class="team-heading">
+          <p class="team-heading-title">Meet our team</p>
+          <p>
+            Equipped with experience and a serving attitude, our team is
+            dedicated to provide the best service. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Delectus quisquam animi maxime numquam
+            doloribus reiciendis, in possimus quaerat ut? In aliquam iusto
+            accusantium qui ab facere itaque corporis impedit nihil!
+          </p>
+        </div>
+        <div class="team-all">
+          <div class="team-member">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="team-member-image">
+                  <img src="assets/images/our-team-sample.jpg" />
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="team-member-text">
+                  <div class="team-member-name">Ram Bahadur</div>
+                  <div class="team-member-position">General Manager</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores blanditiis deleniti est adipisci velit explicabo
+                    labore dignissimos. Minus magnam nam distinctio blanditiis?
+                    Natus maiores odit quis error vel. Assumenda, temporibus!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="team-member-image">
+                  <img src="assets/images/our-team-sample.jpg" />
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="team-member-text">
+                  <div class="team-member-name">Shyam Lal</div>
+                  <div class="team-member-position">Manager</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores blanditiis deleniti est adipisci velit explicabo
+                    labore dignissimos. Minus magnam nam distinctio blanditiis?
+                    Natus maiores odit quis error vel. Assumenda, temporibus!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-logo">
+          <img src="assets/images/hotel sng logo color.png" />
+        </div>
+        <div class="footer-title">Hotel SNG</div>
+        <div class="vertical-divider"></div>
+        <div class="address-contact">
+          Anamnagar, Kathmandu <br />
+          info@hotelsng.com<br />
+          +977 9812345678
+        </div>
+        <div class="social-media-icons">
+          <div class="icons-list">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <div class="footer-item-list">
+                  <p>QUICK LINKS</p>
+                  <a href="index.html">Home</a>
+                  <a href="rooms.html">Rooms</a>
+                  <a href="gallery.html">Gallery</a>
+                  <a href="restaurant.html">Restaurant and Bar</a>
+                  <a href="packages.html">Packages</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="our-team.html">Our Team</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="footer-item-list">
+                  <p>CORPORATE</p>
+                  <a href="">Careers</a>
+                  <a href="">Business Partnership</a>
+                  <a href="">Development Opportunities</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="footer-item-list">
+                  <p>LEGAL</p>
+                  <a href="">Ad and Cookie policy</a>
+                  <a href="">Digital Millennium copyright Act</a>
+                  <a href="">Legal notice</a>
+                  <a href="">Privacy Policy</a>
+                  <a href="">Site Usage Agreement</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="footer-item-list">
+                  <p>HELP</p>
+                  <a href="">Consumer Alert</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="">FAQ</a>
+                  <a href="reach.html">How to Reach us?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-container">
+          <div class="copyright-container-wrapper">
+            <div>
+              <strong>&#169; 2020 Hotel SNG.</strong> All rights reserved.
+              <a href="#"><strong>By An4soft Pvt. Ltd.</strong></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <script>
+      function buttonDropdown(event) {
+        // console.log();
+        var target = document.getElementById(
+          event.target.getAttribute("data-target")
+        );
+        var allDropdown = document.getElementsByClassName("dropdown-content");
+
+        for (i = 0; i < allDropdown.length; i++) {
+          if (target != allDropdown[i]) {
+            allDropdown[i].style.display = "none";
+          }
+        }
+
+        var css = target.style.display;
+        console.log(css);
+        if (!css || css == "none") {
+          target.style.display = "block";
+        } else {
+          target.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

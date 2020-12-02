@@ -2459,6 +2459,12 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  #banner-for-other-pages {
+    height: 360px;
+  }
+}
+
 #banner-for-rooms {
   height: 80px;
   .background-overlay {
@@ -3545,3 +3551,193 @@ footer {
     }
   }
 }
+
+@media (max-width: 426px) {
+  .about-us-section {
+    .mission {
+      text-align: center;
+      p {
+        font-size: 35px;
+        font-family: "Noto Serif JP";
+        font-weight: 900;
+      }
+      .mission-icons {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+.why-smg {
+  .why-smg-title {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Noto Serif JP";
+    font-weight: 900;
+  }
+  .why-smg-text {
+    font-family: "Raleway";
+    li::marker {
+      color: $primary-color;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-overview {
+    padding-bottom: 10px;
+  }
+  .mission-item {
+    margin-bottom: 20px;
+  }
+}
+
+// ----------------- About section ends ------------------
+
+// -------------- Reach section starts ---------------------
+
+#map-in-reach {
+  #mode-selector {
+    top: 40px !important;
+    left: 0px !important;
+  }
+}
+
+.reach-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .reach-text {
+    padding-bottom: 10px;
+    font-family: "Fira Sans";
+    font-size: 14px;
+  }
+  .reach-text-title {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #ff6a00;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+}
+
+// -------------- Reach section ends ---------------------
+
+// ---------------- Team section starts ----------------
+
+.team-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .team-heading {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "Raleway";
+    color: black;
+    .team-heading-title {
+      font-size: 31px;
+      font-weight: 700;
+      font-family: ui-monospace;
+      color: black;
+    }
+  }
+  .team-all {
+    width: 70%;
+    margin: 0 auto;
+    .team-member {
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      box-shadow: 0px 2px 4px 0px #bebebe;
+      .team-member-image {
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      .team-member-text {
+        font-size: 12px;
+        font-family: "Raleway";
+        color: black;
+        letter-spacing: 1px;
+        .team-member-name {
+          font-size: 20px;
+          font-weight: 700;
+          font-family: "Arsenal";
+          color: black;
+        }
+        .team-member-position {
+          color: #ff6a00;
+          font-size: 14px;
+          font-weight: 600;
+          font-family: "FontAwesome", sans-serif;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .team-heading {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-family: "Raleway";
+      color: black;
+      .team-heading-title {
+        font-size: 31px;
+        font-weight: 700;
+        font-family: ui-monospace;
+        color: black;
+      }
+    }
+    .team-all {
+      width: 90%;
+      margin: 0 auto;
+      .team-member {
+        margin-bottom: 20px;
+        background-color: #f5f5f5;
+        box-shadow: 0px 2px 4px 0px #bebebe;
+        .team-member-image {
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .team-member-text {
+          padding-left: 10px;
+          padding-top: 10px;
+          .team-member-name {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "Arsenal";
+            color: black;
+          }
+          .team-member-position {
+            color: #ff6a00;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "FontAwesome", sans-serif;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------------------- Team section ends ----------------
